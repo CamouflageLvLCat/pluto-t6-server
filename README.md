@@ -104,6 +104,19 @@ wine --version
 ```
 
 
+```c++
+git clone https://github.com/CamouflageLvLCat/pluto-t6-server.git
+```
+```c++
+CamouflageLvLCat
+```
+
+```c++
+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
+```
+
+
+
 permisos:
 
 ```c++
