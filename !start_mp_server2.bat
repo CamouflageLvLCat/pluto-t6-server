@@ -18,7 +18,7 @@ echo Server "%name%" will load %cfg% and listen on port %port% UDP!
 echo To shut down the server close this window first!
 echo (%date%)  -  (%time%) %name% server start.
 
-cd /home/ubuntu/t6server-public/Plutonium
+cd /home/ubuntu/pluto-t6-server/Plutonium
 :server
 start /wait /abovenormal bin\plutonium-bootstrapper-win32.exe t6mp "%gamepath%" -dedicated +set key %key% +set fs_game %mod% +set net_port %port% +exec %cfg% +map_rotate
 echo (%date%)  -  (%time%) WARNING: %name% server closed or dropped... server restarts.
