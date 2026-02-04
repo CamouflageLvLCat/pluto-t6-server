@@ -47,7 +47,7 @@ wine --version
 
 ```
 
-
+--------------------------------------------------------
 
 amazon ubuntu-jammy-22.04:
 
@@ -102,7 +102,7 @@ dotnet --list-sdks
 dotnet --version
 wine --version
 ```
-
+--------------------------------------------------------
 
 ```c++
 git clone https://github.com/CamouflageLvLCat/pluto-t6-server.git
@@ -115,7 +115,7 @@ CamouflageLvLCat
 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
 ```
 
-
+--------------------------------------------------------
 
 permisos:
 
@@ -130,8 +130,30 @@ ls -ld /home/ubuntu/pluto-t6-server
 ls -l /home/ubuntu/pluto-t6-server
 ```
 
+--------------------------------------------------------
 
 
+Cambiar la zona horaria a São Paulo
+
+Ver las zonas horarias de Brasil disponibles
+
+```c++
+timedatectl list-timezones | grep Brazil
+```
+
+
+```c++
+sudo timedatectl set-timezone America/Sao_Paulo
+```
+
+Verificar el cambio
+
+```c++
+timedatectl
+```
+
+
+--------------------------------------------------------
 
 
 
