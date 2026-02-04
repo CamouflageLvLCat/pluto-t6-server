@@ -1,0 +1,5 @@
+{
+  "UserAnnouncementMessage": "(Color::Accent){{ClientName}} (Color::White)hails from (Color::Accent){{ClientLocation}}",
+  "UserWelcomeMessage": "Welcome (Color::Accent){{ClientName}}(Color::White), this is your (Color::Accent){{TimesConnected}} (Color::White)time connecting!",
+  "PrivilegedAnnouncementMessage": "(Color::Accent){{ClientLevel}} (Color::White){{ClientName}} (Color::White)has joined the server"
+}

@@ -1,0 +1,15 @@
+{
+  "OffensiveWords": [
+    "^[\\s\\-_.]*[Il|]{4,}[\\s\\-_.]*$",
+    "^[Il|](?:[\\s\\-_.]*[Il|]){4,}$",
+    "^[\\s\\-_.]*(?:[Il|]{2,}[\\s\\-_.]*){2,}$",
+    "maple-software\\.ltd",
+	"maple",
+    "2gsUdAqPE2"
+  ],
+  "EnableProfanityDeterment": true,
+  "ProfanityWarningMessage": "",
+  "ProfanityKickMessage": "",
+  "KickAfterInfringementCount": 1,
+  "KickOnInfringingName": true
+}

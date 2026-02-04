@@ -1,0 +1,632 @@
+{
+  "Commands": {
+    "QuitCommand": {
+      "Name": "quit",
+      "Alias": "q",
+      "MinimumPermission": "Owner",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "RestartCommand": {
+      "Name": "restart",
+      "Alias": "res",
+      "MinimumPermission": "Owner",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "OwnerCommand": {
+      "Name": "owner",
+      "Alias": "iamgod",
+      "MinimumPermission": "User",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "WarnCommand": {
+      "Name": "warn",
+      "Alias": "w",
+      "MinimumPermission": "Trusted",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "WarnClearCommand": {
+      "Name": "warnclear",
+      "Alias": "wc",
+      "MinimumPermission": "Trusted",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "KickCommand": {
+      "Name": "kick",
+      "Alias": "k",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "TempBanCommand": {
+      "Name": "tempban",
+      "Alias": "tb",
+      "MinimumPermission": "Administrator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "BanCommand": {
+      "Name": "ban",
+      "Alias": "b",
+      "MinimumPermission": "SeniorAdmin",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "UnbanCommand": {
+      "Name": "unban",
+      "Alias": "ub",
+      "MinimumPermission": "SeniorAdmin",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "FastRestartCommand": {
+      "Name": "fastrestart",
+      "Alias": "fr",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "MapRotateCommand": {
+      "Name": "maprotate",
+      "Alias": "mr",
+      "MinimumPermission": "Administrator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "SetLevelCommand": {
+      "Name": "setlevel",
+      "Alias": "sl",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "MemoryUsageCommand": {
+      "Name": "usage",
+      "Alias": "us",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "UptimeCommand": {
+      "Name": "uptime",
+      "Alias": "up",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "LoadMapCommand": {
+      "Name": "map",
+      "Alias": "m",
+      "MinimumPermission": "Administrator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "ListRulesCommands": {
+      "Name": "rules",
+      "Alias": "r",
+      "MinimumPermission": "User",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "FlagClientCommand": {
+      "Name": "flag",
+      "Alias": "fp",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "UnflagClientCommand": {
+      "Name": "unflag",
+      "Alias": "uf",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "MaskCommand": {
+      "Name": "mask",
+      "Alias": "ma",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "ListBanInfoCommand": {
+      "Name": "baninfo",
+      "Alias": "bi",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "ExecuteRConCommand": {
+      "Name": "rcon",
+      "Alias": "rcon",
+      "MinimumPermission": "Owner",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "ListExternalIPCommand": {
+      "Name": "getexternalip",
+      "Alias": "ip",
+      "MinimumPermission": "User",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "PruneAdminsCommand": {
+      "Name": "prune",
+      "Alias": "pa",
+      "MinimumPermission": "Owner",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "SetPasswordCommand": {
+      "Name": "setpassword",
+      "Alias": "sp",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": true,
+      "SupportedGames": []
+    },
+    "GetClientPingCommand": {
+      "Name": "ping",
+      "Alias": "pi",
+      "MinimumPermission": "User",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "SetGravatarCommand": {
+      "Name": "setgravatar",
+      "Alias": "sg",
+      "MinimumPermission": "User",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "NextMapCommand": {
+      "Name": "nextmap",
+      "Alias": "nm",
+      "MinimumPermission": "User",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "PrivateMessageAdminsCommand": {
+      "Name": "privatemessageadmin",
+      "Alias": "pma",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": [
+        "IW4",
+        "IW5"
+      ]
+    },
+    "RequestTokenCommand": {
+      "Name": "requesttoken",
+      "Alias": "rt",
+      "MinimumPermission": "Trusted",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "RunAsCommand": {
+      "Name": "runas",
+      "Alias": "ra",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "UnlinkClientCommand": {
+      "Name": "unlinkclient",
+      "Alias": "uc",
+      "MinimumPermission": "Administrator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "AddClientNoteCommand": {
+      "Name": "addnote",
+      "Alias": "an",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "ClearAllReportsCommand": {
+      "Name": "clearallreports",
+      "Alias": "car",
+      "MinimumPermission": "Administrator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "FindPlayerCommand": {
+      "Name": "find",
+      "Alias": "f",
+      "MinimumPermission": "Administrator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "HelpCommand": {
+      "Name": "help",
+      "Alias": "h",
+      "MinimumPermission": "User",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "ListAdminsCommand": {
+      "Name": "admins",
+      "Alias": "a",
+      "MinimumPermission": "User",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "ListAliasesCommand": {
+      "Name": "alias",
+      "Alias": "known",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "ListClientsCommand": {
+      "Name": "list",
+      "Alias": "l",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "ListPluginsCommand": {
+      "Name": "plugins",
+      "Alias": "p",
+      "MinimumPermission": "Administrator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "ListReportsCommand": {
+      "Name": "reports",
+      "Alias": "reps",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "MapAndGameTypeCommand": {
+      "Name": "mapandgametype",
+      "Alias": "mag",
+      "MinimumPermission": "Administrator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "OfflineMessageCommand": {
+      "Name": "offlinemessage",
+      "Alias": "om",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "PrivateMessageCommand": {
+      "Name": "privatemessage",
+      "Alias": "pm",
+      "MinimumPermission": "User",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "ReadMessageCommand": {
+      "Name": "readmessage",
+      "Alias": "rm",
+      "MinimumPermission": "User",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "ReportClientCommand": {
+      "Name": "report",
+      "Alias": "rep",
+      "MinimumPermission": "User",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "SayAllCommand": {
+      "Name": "sayall",
+      "Alias": "sa",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "SayCommand": {
+      "Name": "say",
+      "Alias": "s",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "SetLogLevelCommand": {
+      "Name": "loglevel",
+      "Alias": "ll",
+      "MinimumPermission": "Owner",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "WhoAmICommand": {
+      "Name": "whoami",
+      "Alias": "who",
+      "MinimumPermission": "User",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "AddClientTagCommand": {
+      "Name": "addclienttag",
+      "Alias": "act",
+      "MinimumPermission": "Owner",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "ListClientTags": {
+      "Name": "listclienttags",
+      "Alias": "lct",
+      "MinimumPermission": "Owner",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "RemoveClientTag": {
+      "Name": "removeclienttag",
+      "Alias": "rct",
+      "MinimumPermission": "Owner",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "SetClientTagCommand": {
+      "Name": "setclienttag",
+      "Alias": "sct",
+      "MinimumPermission": "Owner",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "UnsetClientTagCommand": {
+      "Name": "unsetclienttag",
+      "Alias": "uct",
+      "MinimumPermission": "Owner",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "MuteCommand": {
+      "Name": "mute",
+      "Alias": "mu",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "MuteInfoCommand": {
+      "Name": "muteinfo",
+      "Alias": "mi",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "TempMuteCommand": {
+      "Name": "tempmute",
+      "Alias": "tm",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "UnmuteCommand": {
+      "Name": "unmute",
+      "Alias": "um",
+      "MinimumPermission": "Moderator",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "LoginCommand": {
+      "Name": "login",
+      "Alias": "li",
+      "MinimumPermission": "Trusted",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "ResetAnticheatMetricsCommand": {
+      "Name": "resetanticheat",
+      "Alias": "rsa",
+      "MinimumPermission": "Owner",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "MostKillsCommand": {
+      "Name": "mostkills",
+      "Alias": "mk",
+      "MinimumPermission": "User",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "MostPlayedCommand": {
+      "Name": "mostplayed",
+      "Alias": "mp",
+      "MinimumPermission": "User",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "ResetStats": {
+      "Name": "resetstats",
+      "Alias": "rs",
+      "MinimumPermission": "User",
+      "AllowImpersonation": true,
+      "SupportedGames": []
+    },
+    "TopStats": {
+      "Name": "topstats",
+      "Alias": "ts",
+      "MinimumPermission": "User",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "ViewStatsCommand": {
+      "Name": "stats",
+      "Alias": "xlrstats",
+      "MinimumPermission": "User",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "BansubnetCommand": {
+      "Name": "bansubnet",
+      "Alias": "bs",
+      "MinimumPermission": "SeniorAdmin",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "UnbansubnetCommand": {
+      "Name": "unbansubnet",
+      "Alias": "ubs",
+      "MinimumPermission": "SeniorAdmin",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "GiveweaponCommand": {
+      "Name": "giveweapon",
+      "Alias": "gw",
+      "MinimumPermission": "SeniorAdmin",
+      "AllowImpersonation": false,
+      "SupportedGames": [
+        "IW4",
+        "IW5",
+        "T5",
+        "T6"
+      ]
+    },
+    "TakeweaponsCommand": {
+      "Name": "takeweapons",
+      "Alias": "tw",
+      "MinimumPermission": "SeniorAdmin",
+      "AllowImpersonation": false,
+      "SupportedGames": [
+        "IW4",
+        "IW5",
+        "T5",
+        "T6"
+      ]
+    },
+    "SwitchteamCommand": {
+      "Name": "switchteam",
+      "Alias": "st",
+      "MinimumPermission": "Administrator",
+      "AllowImpersonation": false,
+      "SupportedGames": [
+        "IW4",
+        "IW5",
+        "T5",
+        "T6"
+      ]
+    },
+    "LockcontrolsCommand": {
+      "Name": "lockcontrols",
+      "Alias": "lc",
+      "MinimumPermission": "Administrator",
+      "AllowImpersonation": false,
+      "SupportedGames": [
+        "IW4",
+        "IW5",
+        "T5",
+        "T6"
+      ]
+    },
+    "NoclipCommand": {
+      "Name": "noclip",
+      "Alias": "nc",
+      "MinimumPermission": "SeniorAdmin",
+      "AllowImpersonation": false,
+      "SupportedGames": [
+        "IW4",
+        "IW5"
+      ]
+    },
+    "HideCommand": {
+      "Name": "hide",
+      "Alias": "hi",
+      "MinimumPermission": "SeniorAdmin",
+      "AllowImpersonation": false,
+      "SupportedGames": [
+        "IW4",
+        "IW5",
+        "T5",
+        "T6"
+      ]
+    },
+    "AlertCommand": {
+      "Name": "alert",
+      "Alias": "alr",
+      "MinimumPermission": "SeniorAdmin",
+      "AllowImpersonation": false,
+      "SupportedGames": [
+        "IW4",
+        "IW5",
+        "T5",
+        "T6"
+      ]
+    },
+    "GotoplayerCommand": {
+      "Name": "gotoplayer",
+      "Alias": "g2p",
+      "MinimumPermission": "SeniorAdmin",
+      "AllowImpersonation": false,
+      "SupportedGames": [
+        "IW4",
+        "IW5",
+        "T5",
+        "T6"
+      ]
+    },
+    "PlayertomeCommand": {
+      "Name": "playertome",
+      "Alias": "p2m",
+      "MinimumPermission": "SeniorAdmin",
+      "AllowImpersonation": false,
+      "SupportedGames": [
+        "IW4",
+        "IW5",
+        "T5",
+        "T6"
+      ]
+    },
+    "GotoCommand": {
+      "Name": "goto",
+      "Alias": "g2",
+      "MinimumPermission": "SeniorAdmin",
+      "AllowImpersonation": false,
+      "SupportedGames": [
+        "IW4",
+        "IW5",
+        "T5",
+        "T6"
+      ]
+    },
+    "KillCommand": {
+      "Name": "kill",
+      "Alias": "kpl",
+      "MinimumPermission": "SeniorAdmin",
+      "AllowImpersonation": false,
+      "SupportedGames": [
+        "IW4",
+        "IW5",
+        "T5",
+        "T6"
+      ]
+    },
+    "SetspectatorCommand": {
+      "Name": "setspectator",
+      "Alias": "spec",
+      "MinimumPermission": "Administrator",
+      "AllowImpersonation": false,
+      "SupportedGames": [
+        "IW4",
+        "IW5",
+        "T5",
+        "T6"
+      ]
+    },
+    "WhitelistvpnCommand": {
+      "Name": "whitelistvpn",
+      "Alias": "wv",
+      "MinimumPermission": "SeniorAdmin",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    },
+    "DisallowvpnCommand": {
+      "Name": "disallowvpn",
+      "Alias": "dv",
+      "MinimumPermission": "SeniorAdmin",
+      "AllowImpersonation": false,
+      "SupportedGames": []
+    }
+  }
+}

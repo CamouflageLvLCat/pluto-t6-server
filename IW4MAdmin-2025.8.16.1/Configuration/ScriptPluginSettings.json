@@ -1,0 +1,47 @@
+{
+  "Broadcast Bans": {
+    "EnableBroadcastBans": false
+  },
+  "ActionOnReport.js": {
+    "config": {
+      "enabled": true,
+      "reportAction": "TempBan",
+      "maxReportCount": 3,
+      "tempBanDurationMinutes": 960
+    }
+  },
+  "GameInterface.js": {
+    "config": {
+      "pollingRate": 300
+    }
+  },
+  "IW4ToDiscord": {
+    "ReportsWebhook": "https://discord.com/api/webhooks/1389378997015547934/PxJf3_ljTMX8V0LPFThpxPtYVRdgFv4pvtIbTVKORm41zHu8q6ubFEzfpaisULc5wdeL",
+    "BansWebhook": null,
+    "StatusWebhook": null,
+    "SayWebhook": "https://discord.com/api/webhooks/1116579433487282257/IXubAql_fA8nXBk6F6ldYbLZ6Les59pJ2RttwfVhsOzgGIplFXTAMI_rIPnB12C2-VcA",
+    "ConnectionsWebhook": null
+  },
+  "SubnetBan.js": {
+    "SubnetBanList": [],
+    "BanMessage": "You are not allowed to join this server."
+  },
+  "VPN Detection Plugin": {
+    "enabled": true,
+    "vpnExceptionIds": [
+      2
+    ]
+  },
+  "VPN Detection Plugin (Optimized)": {
+    "enabled": true
+  },
+  "VPN Detection Plugin (Optimized + ipinfo + Debounce)": {
+    "enabled": true
+  },
+  "VPN Detection Plugin (Robust)": {
+    "enabled": true
+  },
+  "VPN Detection Plugin (debounce-per-player + ipinfo)": {
+    "enabled": true
+  }
+}
