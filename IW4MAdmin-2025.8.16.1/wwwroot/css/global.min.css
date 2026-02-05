@@ -380,7 +380,7 @@ body.dark-mode div.d-flex.p-5.pr-15.bg-dark-dm.bg-light-lm.rounded {
 /* Modal content en modo oscuro */
 body.dark-mode div.modal-content {
     background-color: #0F0F0F !important;
-    color: #b53e51 !important;
+    color: #f4f6f9 !important;
 }
 
 /* =====================================================
