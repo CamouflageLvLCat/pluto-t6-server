@@ -6,6 +6,14 @@
 
 
 
+
+
+
+
+
+
+
+
 /* =====================================================
    IW4MADMIN — OPTIMIZED THEME (dark + light)
    SIN EFECTOS DE RESPLANDOR (GLOW REMOVIDO)
@@ -151,13 +159,7 @@ body.dark-mode .on-this-page-nav{
 
 /* ---------- NAVBAR ---------- */
 body.dark-mode nav.navbar{
-  background: linear-gradient(
-    135deg,
-    rgba(181,62,81,0.35),
-    rgba(181,62,81,0.08)
-  ) !important;
-  backdrop-filter: blur(10px) saturate(130%) !important;
-  -webkit-backdrop-filter: blur(10px) saturate(130%) !important;
+  background-color: rgba(181,62,81,0.2) !important; /* vidrio eliminado */
   border:1px solid rgba(181,62,81,0.6) !important;
   box-shadow:none !important;
 }
@@ -185,24 +187,17 @@ body.dark-mode nav.navbar input.form-control{
 }
 
 /* ---------- SERVER HEADER ---------- */
-[id^="server_header_"]{
-  position:relative !important;
-  z-index:2 !important;
-  overflow:visible !important;
-}
-
+DIV[id="server_header_1270014979"][class="p-5 pl-10 pr-10 bg-primary rounded-top d-flex flex-column flex-lg-row flex-wrap justify-content-between text-light"],
 body.dark-mode [id^="server_header_"]{
-  background: linear-gradient(135deg,var(--accent-mid),rgba(181,62,81,0.20)) !important;
+  background-color: rgba(181,62,81,0.2) !important; /* vidrio eliminado, solo transparencia oscura */
   color:#e6f2ff !important;
-  backdrop-filter: blur(2px) !important;
   border:1px solid var(--accent) !important;
   box-shadow:none !important;
 }
 
 body:not(.dark-mode) [id^="server_header_"]{
-  background: linear-gradient(135deg,rgba(181,62,81,0.45),rgba(255,255,255,0.25)) !important;
+  background-color: rgba(181,62,81,0.2) !important; /* vidrio eliminado */
   color:#1a1a1a !important;
-  backdrop-filter: blur(6px) saturate(130%) !important;
   border:1px solid rgba(181,62,81,0.5) !important;
   box-shadow:none !important;
 }
@@ -220,32 +215,23 @@ body:not(.dark-mode) div.card.mt-20.mb-20.ml-0.mr-0.p-0:hover{
 }
 
 /* ---------- HEADER-LIKE BLOCK ---------- */
-body.dark-mode div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded{
-  background: linear-gradient(135deg,var(--accent-strong),var(--accent-soft)) !important;
-  backdrop-filter: blur(12px) saturate(130%) !important;
+DIV[class="d-flex flex-column flex-md-row justify-content-md-between bg-dark-dm bg-light-lm p-10 mt-15 mb-15 rounded"]{
+  background-color: rgba(181,62,81,0.2) !important; /* vidrio eliminado */
   border:1px solid var(--accent-glass-border) !important;
   box-shadow:none !important;
 }
 
-body:not(.dark-mode) div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded{
-  background: linear-gradient(135deg,rgba(181,62,81,0.45),rgba(255,255,255,0.60)) !important;
-  backdrop-filter: blur(12px) saturate(130%) !important;
-  border:1px solid rgba(181,62,81,0.55) !important;
-  box-shadow:none !important;
-}
-
 /* ---------- PROFILE META ENTRY ---------- */
+DIV[class="m-md-5 p-15 w-half rounded bg-very-dark-dm bg-light-ex-lm profile-meta-entry font-size-12  w-md-100 w-lg-150"],
 body.dark-mode div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta-entry{
-  background: linear-gradient(135deg,rgba(181,62,81,0.18),rgba(181,62,81,0.03)) !important;
+  background-color: rgba(181,62,81,0.1) !important; /* rojo 60% opaco */
   border:1px solid rgba(181,62,81,0.7) !important;
-  backdrop-filter: blur(8px) saturate(120%) !important;
   box-shadow:none !important;
 }
 
 body:not(.dark-mode) div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta-entry{
-  background: linear-gradient(135deg,rgba(181,62,81,0.22),rgba(255,255,255,0.55)) !important;
-  border:1px solid rgba(181,62,81,0.6) !important;
-  backdrop-filter: blur(8px) saturate(120%) !important;
+  background-color: rgba(181,62,81,0.2) !important; /* vidrio eliminado */
+  border:1px solid rgba(181,62,81,0.9) !important;
   box-shadow:none !important;
 }
 
@@ -256,13 +242,20 @@ body.dark-mode #profile_avatar{
   box-shadow:none !important;
 }
 
+/* ---------- PROFILE AVATAR - MODO CLARO ---------- */
+body:not(.dark-mode) #profile_avatar{
+  background: rgba(181,62,81,0.99) !important; /* rojo casi sólido */
+  border: 1px solid rgba(181,62,81,0.7) !important; /* borde semitransparente */
+  box-shadow: none !important; /* sin resplandor */
+}
+
+
+
+
 /* ---------- SCROLLBAR ---------- */
 .sidebar::-webkit-scrollbar{ width:12px !important; }
 .sidebar::-webkit-scrollbar-track{ background:#4b4b4b !important;border-radius:6px !important; }
 .sidebar::-webkit-scrollbar-thumb{ background-color:var(--bg-dark) !important;border-radius:6px !important;border:3px solid #4b4b4b !important; }
-
-
-
 
 /* =========================
    NAVBAR - MODO CLARO (GLASS + BORDE ROJO)
@@ -270,19 +263,10 @@ body.dark-mode #profile_avatar{
 
 body:not(.dark-mode) nav.navbar,
 body.light-mode nav.navbar{
-  background: linear-gradient(
-    135deg,
-    rgba(181,62,81,0.35),
-    rgba(255,255,255,0.55)
-  ) !important;
-
-  backdrop-filter: blur(10px) saturate(130%) !important;
-  -webkit-backdrop-filter: blur(10px) saturate(130%) !important;
-
-  border: 1px solid rgba(181,62,81,0.65) !important; /* 👈 borde rojo glass */
-  box-shadow: none !important; /* sin glow */
+  background-color: rgba(181,62,81,0.2) !important; /* vidrio eliminado */
+  border: 1px solid rgba(181,62,81,0.65) !important;
+  box-shadow: none !important;
 }
-
 
 /* =========================
    BADGE SUCCESS - TEXTO BLANCO (FIX)
@@ -293,32 +277,11 @@ body.dark-mode span.badge.badge-success {
   font-weight: 600;
 }
 
-
-
-/* =========================
-   BADGE SUCCESS - TEXTO BLANCO (DARK + LIGHT MODE)
-   ========================= */
-
-/* 🌙 Modo oscuro */
-body.dark-mode span.badge.badge-success {
-  color: #ffffff !important;
-  font-weight: 600;
-}
-
 /* ☀️ Modo claro */
 body:not(.dark-mode) span.badge.badge-success {
   color: #ffffff !important;
   font-weight: 600;
 }
-
-
-
-
-
-
-
-
-
 
 /* =========================
    FIX SCROLLBAR (NO LO PISE TU CSS GLOBAL)
@@ -339,7 +302,6 @@ body.dark-mode .on-this-page-nav::-webkit-scrollbar {
   width: 10px !important;
 }
 
-
 /* =========================
    FIX SCROLLBAR (MODO CLARO)
    ========================= */
@@ -349,7 +311,7 @@ body:not(.dark-mode) .sidebar,
 body:not(.dark-mode) .main-sidebar,
 body:not(.dark-mode) .on-this-page-nav {
   scrollbar-width: thin !important;
-  scrollbar-color: #ffffff #ffffff !important; /* thumb / track */
+  scrollbar-color: #ffffff #ffffff !important;
 }
 
 /* Chrome / Edge / Safari */
@@ -371,6 +333,55 @@ body:not(.dark-mode) .on-this-page-nav::-webkit-scrollbar-thumb {
   background: #E5E5E5 !important;
   border-radius: 10px;
 }
+
+
+
+
+
+
+
+
+
+
+/* FORZAR: quitar vidrio y poner color sólido #b53e51 en el bloque objetivo */
+body.dark-mode div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded,
+div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded {
+  /* eliminar cualquier imagen/degradado */
+  background-image: none !important;
+  background: #b53e51 !important;
+  background-color: #b53e51 !important;
+  background-color: rgba(181,62,81,0.2) !important; /* rojo 60% opaco */
+
+
+  /* eliminar efecto vidrio si existe */
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+
+  /* eliminar overlays/pseudo elementos visuales */
+  box-shadow: none !important;
+  border: 1px solid rgba(181,62,81,0.9) !important;
+}
+
+/* POR SI EL DEGRADE ESTÁ EN ::before / ::after */
+body.dark-mode div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded::before,
+body.dark-mode div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded::after,
+div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded::before,
+div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded::after {
+  content: none !important;
+  background: none !important;
+  display: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+
+
+
+
+
+
+
+
+
 
 
 
