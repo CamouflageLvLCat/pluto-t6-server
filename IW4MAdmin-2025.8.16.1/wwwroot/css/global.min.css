@@ -187,10 +187,10 @@ body.dark-mode nav.navbar input.form-control{
 }
 
 /* ---------- SERVER HEADER ---------- */
-DIV[id="server_header_1270014979"][class="p-5 pl-10 pr-10 bg-primary rounded-top d-flex flex-column flex-lg-row flex-wrap justify-content-between text-light"],
+DIV[id="server_header"][class="p-5 pl-10 pr-10 bg-primary rounded-top d-flex flex-column flex-lg-row flex-wrap justify-content-between text-light"],
 body.dark-mode [id^="server_header_"]{
   background-color: rgba(181,62,81,0.2) !important; /* vidrio eliminado, solo transparencia oscura */
-  color:#e6f2ff !important;
+  color:#e6f2ff ;
   border:1px solid var(--accent) !important;
   box-shadow:none !important;
 }
