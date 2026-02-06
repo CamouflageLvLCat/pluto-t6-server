@@ -251,7 +251,7 @@ body:not(.dark-mode) div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta
 
 /* ---------- PROFILE AVATAR ---------- */
 body.dark-mode #profile_avatar{
-  background: rgba(181,62,81,0.30) !important;
+  background: rgba(181,62,81,0.99) !important;
   border:1px solid rgba(181,62,81,0.7) !important;
   box-shadow:none !important;
 }
