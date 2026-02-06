@@ -340,6 +340,38 @@ body.dark-mode .on-this-page-nav::-webkit-scrollbar {
 }
 
 
+/* =========================
+   FIX SCROLLBAR (MODO CLARO)
+   ========================= */
+
+/* Sidebar scroll */
+body:not(.dark-mode) .sidebar,
+body:not(.dark-mode) .main-sidebar,
+body:not(.dark-mode) .on-this-page-nav {
+  scrollbar-width: thin !important;
+  scrollbar-color: #ffffff #ffffff !important; /* thumb / track */
+}
+
+/* Chrome / Edge / Safari */
+body:not(.dark-mode) .sidebar::-webkit-scrollbar,
+body:not(.dark-mode) .main-sidebar::-webkit-scrollbar,
+body:not(.dark-mode) .on-this-page-nav::-webkit-scrollbar {
+  width: 10px !important;
+}
+
+body:not(.dark-mode) .sidebar::-webkit-scrollbar-track,
+body:not(.dark-mode) .main-sidebar::-webkit-scrollbar-track,
+body:not(.dark-mode) .on-this-page-nav::-webkit-scrollbar-track {
+  background: #F5F5F5 !important;
+}
+
+body:not(.dark-mode) .sidebar::-webkit-scrollbar-thumb,
+body:not(.dark-mode) .main-sidebar::-webkit-scrollbar-thumb,
+body:not(.dark-mode) .on-this-page-nav::-webkit-scrollbar-thumb {
+  background: #E5E5E5 !important;
+  border-radius: 10px;
+}
+
 
 
 
