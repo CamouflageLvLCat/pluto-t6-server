@@ -6,7 +6,7 @@
     "SocialAccounts": [
       {
         "Title": "putonium server lists",
-        "Url": "https://pluservers.onrender.com/",
+        "Url": "https://pluservers.ddns.net",
         "IconUrl": "https://ia902909.us.archive.org/30/items/favicon_202601/favicon.png",
         "IconId": ""
       }
@@ -15,12 +15,12 @@
   },
   "EnableWebFront": true,
   "WebfrontBindUrl": "http://0.0.0.0:1624",
-  "ManualWebfrontUrl": "http://iw4madmin-br.ddns.net",
+  "ManualWebfrontUrl": "http://iw4madmin-ar.ddns.net",
   "WebfrontPrimaryColor": "#b53e51",
   "WebfrontSecondaryColor": null,
   "WebfrontCustomBranding": null,
   "Webfront": {
-    "ScriptInjection": "<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-WMG705MJMD\"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-WMG705MJMD');</script><script>(function(){const applyCharts=()=>{if(!window.Chart||!Chart.instances)return;for(const k in Chart.instances){const c=Chart.instances[k];if(!c||!c.data)continue;c.data.datasets.forEach(d=>{d.borderColor='#b53e51';d.backgroundColor=document.body.classList.contains('dark-mode')?'rgba(181, 62, 81, 0.1)':'rgba(181, 62, 81, 0.25)'});c.update();}};const KEY='iw4m_selected_server';const applyServers=()=>{const links=document.querySelectorAll('a[href*=\"/Server/Scoreboard\"]');const saved=localStorage.getItem(KEY);links.forEach(a=>{const href=a.getAttribute('href');if(saved&&href===saved)a.classList.add('iw4m-server-selected');if(a.dataset.sel)return;a.dataset.sel=1;a.addEventListener('click',()=>{localStorage.setItem(KEY,href);links.forEach(x=>x.classList.remove('iw4m-server-selected'));a.classList.add('iw4m-server-selected');});});};const run=()=>{applyCharts();applyServers();};new MutationObserver(run).observe(document.body,{childList:true,subtree:true});window.addEventListener('DOMContentLoaded',run);})();</script>"
+    "ScriptInjection": "<link rel=\"canonical\" href=\"http://iw4madmin-ar.ddns.net/\" /><script async src=\"https://www.googletagmanager.com/gtag/js?id=G-WMG705MJMD\"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-WMG705MJMD');</script><script>(function(){const applyCharts=()=>{if(!window.Chart||!Chart.instances)return;for(const k in Chart.instances){const c=Chart.instances[k];if(!c||!c.data)continue;c.data.datasets.forEach(d=>{d.borderColor='#b53e51';d.backgroundColor=document.body.classList.contains('dark-mode')?'rgba(181, 62, 81, 0.1)':'rgba(181, 62, 81, 0.25)'});c.update();}};const KEY='iw4m_selected_server';const applyServers=()=>{const links=document.querySelectorAll('a[href*=\\\"/Server/Scoreboard\\\"]');const saved=localStorage.getItem(KEY);links.forEach(a=>{const href=a.getAttribute('href');if(saved&&href===saved)a.classList.add('iw4m-server-selected');if(a.dataset.sel)return;a.dataset.sel=1;a.addEventListener('click',()=>{localStorage.setItem(KEY,href);links.forEach(x=>x.classList.remove('iw4m-server-selected'));a.classList.add('iw4m-server-selected');});});};const run=()=>{applyCharts();applyServers();};new MutationObserver(run).observe(document.body,{childList:true,subtree:true});window.addEventListener('DOMContentLoaded',run);})();</script>"
   },
   "EnableMultipleOwners": false,
   "EnableSteppedHierarchy": false,
@@ -48,10 +48,10 @@
   "IngameAccentColorKey": "Cyan",
   "AutoMessagePeriod": 60,
   "AutoMessages": [
+    "^3pluservers.ddns.net",
     "^3!report player reason",
     "^3tree reports^7=^3 temp ban",
-    "^3discord.gg/8v3NRGepuv",
-    "^3pluservers.ddns.net"
+    "^3discord.gg/8v3NRGepuv"
   ],
   "GlobalRules": [
     "Cheating/Exploiting is not allowed",
@@ -121,19 +121,6 @@
   "Servers": [
     {
       "IPAddress": "127.0.0.1",
-      "Port": 4979,
-      "Password": "tytyty",
-      "Rules": [],
-      "AutoMessages": [],
-      "ManualLogPath": "/home/ubuntu/pluto-t6-server/Plutonium/storage/t6/main/logs/games3_mp.log",
-      "RConParserVersion": "Plutonium T6 Parser (2024)",
-      "EventParserVersion": "Plutonium T6 Parser (2024)",
-      "ReservedSlotNumber": 0,
-      "GameLogServerUrl": null,
-      "CustomHostname": null
-    },
-    {
-      "IPAddress": "127.0.0.1",
       "Port": 4981,
       "Password": "tytyty",
       "Rules": [],
@@ -144,10 +131,23 @@
       "ReservedSlotNumber": 0,
       "GameLogServerUrl": null,
       "CustomHostname": null
+    },
+    {
+      "IPAddress": "127.0.0.1",
+      "Port": 4979,
+      "Password": "tytyty",
+      "Rules": [],
+      "AutoMessages": [],
+      "ManualLogPath": "/home/ubuntu/pluto-t6-server/Plutonium/storage/t6/main/logs/games3_mp.log",
+      "RConParserVersion": "Plutonium T6 Parser (2024)",
+      "EventParserVersion": "Plutonium T6 Parser (2024)",
+      "ReservedSlotNumber": 0,
+      "GameLogServerUrl": null,
+      "CustomHostname": null
     }
   ],
   "MinimumNameLength": 3,
-  "Id": "b9b241ee-6182-4ddb-9adb-0f5e51660342",
+  "Id": "67a7734f-9ce1-4817-856a-0526f2c62e8e",
   "SubscriptionId": "",
   "Maps": null,
   "QuickMessages": null,
