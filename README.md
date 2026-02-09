@@ -116,6 +116,7 @@ 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
 ```
 
 --------------------------------------------------------
+Instalar Nginx:
 
 ```c++
 sudo apt update 
