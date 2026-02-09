@@ -7,17 +7,9 @@
 
 
 
-
-
-
-
-
-
-
-
 /* =====================================================
    IW4MADMIN — OPTIMIZED THEME (dark + light)
-   SIN EFECTOS DE RESPLANDOR (GLOW REMOVIDO)
+   SIN BORDES DOBLES — BORDE UNICO 1px
    ===================================================== */
 
 /* ---------- Variables ---------- */
@@ -28,7 +20,6 @@
   --accent-strong: rgba(181,62,81,0.55);
   --accent-mid: rgba(181,62,81,0.45);
   --accent-soft: rgba(181,62,81,0.22);
-  --accent-glass-border: rgba(181,62,81,0.6);
   --white: #FFFFFF;
 }
 
@@ -141,7 +132,6 @@ body:not(.dark-mode) .card{
   border:none !important;
 }
 
-
 /* ---------- SIDEBAR ---------- */
 body.dark-mode aside,
 body.dark-mode .main-sidebar,
@@ -152,7 +142,6 @@ body.dark-mode .on-this-page-nav{
   background-color:var(--bg-dark) !important;
 }
 
-
 body.dark-mode nav.navbar input.form-control{
   background: rgba(0,0,0,0.6) !important;
   border:1px solid rgba(255,255,255,0.15) !important;
@@ -160,26 +149,27 @@ body.dark-mode nav.navbar input.form-control{
   box-shadow:none !important;
 }
 
-/* ---------- SERVER HEADER ---------- */
+/* ---------- SERVER HEADER (SIN BORDE) ---------- */
 DIV[id="server_header"][class="p-5 pl-10 pr-10 bg-primary rounded-top d-flex flex-column flex-lg-row flex-wrap justify-content-between text-light"],
 body.dark-mode [id^="server_header_"]{
-  background-color: rgba(181,62,81,0.2) !important; /* vidrio eliminado, solo transparencia oscura */
+  background-color: rgba(181,62,81,0.1) !important;
   color:#e6f2ff ;
-  border:1px solid var(--accent) !important;
+  border:none !important;
   box-shadow:none !important;
 }
 
 body:not(.dark-mode) [id^="server_header_"]{
-  background-color: rgba(181,62,81,0.2) !important; /* vidrio eliminado */
+  background-color: rgba(181,62,81,0.2) !important;
   color:#1a1a1a !important;
-  border:1px solid rgba(181,62,81,0.5) !important;
+  border:none !important;
   box-shadow:none !important;
 }
 
-/* ---------- SERVER CARD ---------- */
+/* ---------- SERVER CARD (BORDE UNICO) ---------- */
 div.card.mt-20.mb-20.ml-0.mr-0.p-0{
   transition: transform .2s ease !important;
   overflow:visible !important;
+  border: 1px solid rgba(181,62,81,0.7) !important;
 }
 
 body.dark-mode div.card.mt-20.mb-20.ml-0.mr-0.p-0:hover,
@@ -188,39 +178,32 @@ body:not(.dark-mode) div.card.mt-20.mb-20.ml-0.mr-0.p-0:hover{
   box-shadow:none !important;
 }
 
-/* ---------- HEADER-LIKE BLOCK ---------- */
+/* ---------- BLOQUE SUPERIOR (SIN BORDE) ---------- */
 DIV[class="d-flex flex-column flex-md-row justify-content-md-between bg-dark-dm bg-light-lm p-10 mt-15 mb-15 rounded"]{
-  background-color: rgba(181,62,81,0.2) !important; /* vidrio eliminado */
-  border:1px solid var(--accent-glass-border) !important;
+  background-color: rgba(181,62,81,0.1) !important;
+  border:none !important;
   box-shadow:none !important;
 }
 
 /* ---------- PROFILE META ENTRY ---------- */
 DIV[class="m-md-5 p-15 w-half rounded bg-very-dark-dm bg-light-ex-lm profile-meta-entry font-size-12  w-md-100 w-lg-150"],
-body.dark-mode div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta-entry{
-  background-color: rgba(181,62,81,0.1) !important; /* rojo 60% opaco */
-  border:1px solid rgba(181,62,81,0.7) !important;
-  box-shadow:none !important;
-}
-
+body.dark-mode div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta-entry,
 body:not(.dark-mode) div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta-entry{
-  background-color: rgba(181,62,81,0.2) !important; /* vidrio eliminado */
-  border:1px solid rgba(181,62,81,0.9) !important;
+  background-color: rgba(99, 36, 46, 0.1) !important;
+  border: 1px solid rgba(181,62,81,0.7) !important;
   box-shadow:none !important;
 }
 
-/* ---------- PROFILE AVATAR ---------- */
-body.dark-mode #profile_avatar{
-  background: rgba(181,62,81,0.99) !important;
-  border:1px solid rgba(181,62,81,0.7) !important;
-  box-shadow:none !important;
+/* ---------- LISTAS ---------- */
+body.dark-mode .list-group-item,
+body:not(.dark-mode) .list-group-item{
+  border: 1px solid rgba(181,62,81,0.7) !important;
 }
 
-/* ---------- PROFILE AVATAR - MODO CLARO ---------- */
-body:not(.dark-mode) #profile_avatar{
-  background: rgba(181,62,81,0.99) !important; /* rojo casi sólido */
-  border: 1px solid rgba(181,62,81,0.7) !important; /* borde semitransparente */
-  box-shadow: none !important; /* sin resplandor */
+/* ---------- HOVER ---------- */
+div.card.mt-20.mb-20.ml-0.mr-0.p-0:hover,
+div.card.mt-20.mb-20.ml-0.mr-0.p-0:focus-within {
+  border: 1px solid rgba(181,62,81,0.7) !important;
 }
 
 
@@ -232,28 +215,10 @@ body:not(.dark-mode) #profile_avatar{
 .sidebar::-webkit-scrollbar-thumb{ background-color:var(--bg-dark) !important;border-radius:6px !important;border:3px solid #4b4b4b !important; }
 
 
-}
-
-/* =========================
-   BADGE SUCCESS - TEXTO BLANCO (FIX)
-   ========================= */
-
-body.dark-mode span.badge.badge-success {
-  color: #ffffff !important; /* texto blanco */
-  font-weight: 600;
-}
-
-/* ☀️ Modo claro */
-body:not(.dark-mode) span.badge.badge-success {
-  color: #ffffff !important;
-  font-weight: 600;
-}
-
 /* =========================
    FIX SCROLLBAR (NO LO PISE TU CSS GLOBAL)
    ========================= */
 
-/* Sidebar scroll */
 body.dark-mode .sidebar,
 body.dark-mode .main-sidebar,
 body.dark-mode .on-this-page-nav {
@@ -261,7 +226,6 @@ body.dark-mode .on-this-page-nav {
   scrollbar-color: #0F0F0F #0F0F0F !important;
 }
 
-/* Chrome / Edge / Safari */
 body.dark-mode .sidebar::-webkit-scrollbar,
 body.dark-mode .main-sidebar::-webkit-scrollbar,
 body.dark-mode .on-this-page-nav::-webkit-scrollbar {
@@ -272,7 +236,6 @@ body.dark-mode .on-this-page-nav::-webkit-scrollbar {
    FIX SCROLLBAR (MODO CLARO)
    ========================= */
 
-/* Sidebar scroll */
 body:not(.dark-mode) .sidebar,
 body:not(.dark-mode) .main-sidebar,
 body:not(.dark-mode) .on-this-page-nav {
@@ -280,7 +243,6 @@ body:not(.dark-mode) .on-this-page-nav {
   scrollbar-color: #ffffff #ffffff !important;
 }
 
-/* Chrome / Edge / Safari */
 body:not(.dark-mode) .sidebar::-webkit-scrollbar,
 body:not(.dark-mode) .main-sidebar::-webkit-scrollbar,
 body:not(.dark-mode) .on-this-page-nav::-webkit-scrollbar {
@@ -300,45 +262,67 @@ body:not(.dark-mode) .on-this-page-nav::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
+/* ---------- HEADER-LIKE BLOCK ---------- */
+DIV[class="d-flex flex-column flex-md-row justify-content-md-between bg-dark-dm bg-light-lm p-10 mt-15 mb-15 rounded"]{
+  background-color: rgba(181,62,81,0.7) !important;
+  border:1px solid rgba(181,62,81,0.7) !important; /* EDITADO */
+  box-shadow:none !important;
+}
 
 
 
 
 
-
-
-
-
+  
 /* FORZAR: quitar vidrio y poner color sólido #b53e51 en el bloque objetivo */
 body.dark-mode div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded,
 div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded {
-  /* eliminar cualquier imagen/degradado */
   background-image: none !important;
   background: #b53e51 !important;
   background-color: #b53e51 !important;
-  background-color: rgba(181,62,81,0.2) !important; /* rojo 60% opaco */
+  background-color: rgba(181,62,81,0.1) !important;
 
-
-  /* eliminar efecto vidrio si existe */
   -webkit-backdrop-filter: none !important;
   backdrop-filter: none !important;
 
-  /* eliminar overlays/pseudo elementos visuales */
   box-shadow: none !important;
-  border: 1px solid rgba(181,62,81,0.9) !important;
+  border: 1px solid rgba(181,62,81,0.7) !important; /* EDITADO */
 }
 
-/* POR SI EL DEGRADE ESTÁ EN ::before / ::after */
-body.dark-mode div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded::before,
-body.dark-mode div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded::after,
-div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded::before,
-div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded::after {
-  content: none !important;
-  background: none !important;
-  display: none !important;
-  -webkit-backdrop-filter: none !important;
-  backdrop-filter: none !important;
+
+
+
+
+
+
+div[id^="server_header_"].bg-primary {
+    border-bottom: 0.5px solid rgba(181,62,81,0.5) !important;
 }
+
+
+
+
+
+
+
+
+
+
+/* ---------- PROFILE AVATAR ---------- */
+body.dark-mode #profile_avatar{
+  background: rgba(181,62,81,0.99) !important;
+  border:1px solid rgba(181,62,81,0.7) !important;
+  box-shadow:none !important;
+}
+
+/* ---------- PROFILE AVATAR - MODO CLARO ---------- */
+body:not(.dark-mode) #profile_avatar{
+  background: rgba(181,62,81,0.99) !important; /* rojo casi sólido */
+  border: 1px solid rgba(181,62,81,0.7) !important; /* borde semitransparente */
+  box-shadow: none !important; /* sin resplandor */
+}
+
+
 
 
 
