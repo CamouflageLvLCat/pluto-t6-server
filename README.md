@@ -117,6 +117,30 @@ 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
 
 --------------------------------------------------------
 
+```c++
+sudo apt update 
+sudo apt upgrade -y
+```
+
+```c++
+sudo apt install nginx -y
+```
+
+verificar que este activo:
+
+```c++
+sudo systemctl status nginx
+```
+
+
+Habilitar Nginx al iniciar el sistema:
+
+```c++
+sudo systemctl enable nginx
+```
+
+
+
 permisos:
 
 ```c++
