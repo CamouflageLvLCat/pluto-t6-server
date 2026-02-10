@@ -339,3 +339,39 @@ body:not(.dark-mode) #profile_avatar{
 
 
 
+
+/* ===== HISTORIAL JUGADORES (FIX DEFINITIVO) ===== */
+
+/* ocultar contenedor completo al inicio */
+div:has(canvas[id^="server_history_canvas_"]) {
+  opacity: 0 !important;
+  transition: opacity 0.15s ease;
+}
+
+/* mostrar cuando el gráfico esté listo */
+body.iw4m-chart-ready div:has(canvas[id^="server_history_canvas_"]) {
+  opacity: 1 !important;
+}
+
+/* canvas */
+canvas[id^="server_history_canvas_"] {
+  background: transparent !important;
+  height: 60px !important;
+  max-height: 60px !important;
+  display: block !important;
+  border-radius: 0 0 8px 8px;
+}
+
+/* evitar fondo negro */
+.chartjs-render-monitor {
+  background-color: transparent !important;
+}
+
+/* eliminar espacio fantasma */
+.chartjs-size-monitor,
+.chartjs-size-monitor-expand,
+.chartjs-size-monitor-shrink {
+  height: 0 !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+}
