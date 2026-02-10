@@ -190,7 +190,7 @@ DIV[class="m-md-5 p-15 w-half rounded bg-very-dark-dm bg-light-ex-lm profile-met
 body.dark-mode div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta-entry,
 body:not(.dark-mode) div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta-entry{
   background-color: rgba(99, 36, 46, 0.1) !important;
-  border: 1px solid rgba(181,62,81,0.7) !important;
+  border: 0.5px solid rgba(181,62,81,0.7) !important;
   box-shadow:none !important;
 }
 
@@ -311,13 +311,13 @@ div[id^="server_header_"].bg-primary {
 /* ---------- PROFILE AVATAR ---------- */
 body.dark-mode #profile_avatar{
   background: rgba(181,62,81,0.99) !important;
-  border:1px solid rgba(181,62,81,0.7) !important;
+  border:0.8px solid rgba(181,62,81,0.7) !important;
   box-shadow:none !important;
 }
 
 /* ---------- PROFILE AVATAR - MODO CLARO ---------- */
 body:not(.dark-mode) #profile_avatar{
   background: rgba(181,62,81,0.99) !important; /* rojo casi sólido */
-  border: 1px solid rgba(181,62,81,0.7) !important; /* borde semitransparente */
+  border: 0.8px solid rgba(181,62,81,0.7) !important; /* borde semitransparente */
   box-shadow: none !important; /* sin resplandor */
 }
