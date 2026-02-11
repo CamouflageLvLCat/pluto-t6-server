@@ -165,6 +165,20 @@ body:not(.dark-mode) [id^="server_header_"]{
   box-shadow:none !important;
 }
 
+
+
+body:not(.dark-mode) div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded{
+  background-color: rgba(181,62,81, 0.2) !important;
+  color: #1a1a1a !important;
+  border: 1px solid rgba(181,62,81, 0.55) !important; /* borde fino celeste */
+  box-shadow: none !important;
+}
+
+
+
+
+
+
 /* ---------- SERVER CARD (BORDE UNICO) ---------- */
 div.card.mt-20.mb-20.ml-0.mr-0.p-0{
   transition: none !important;
@@ -311,13 +325,22 @@ div[id^="server_header_"].bg-primary {
 /* ---------- PROFILE AVATAR ---------- */
 body.dark-mode #profile_avatar{
   background: rgba(181,62,81,0.99) !important;
-  border:0.8px solid rgba(181,62,81,0.7) !important;
+  border:1px solid rgba(181,62,81,0.7) !important;
   box-shadow:none !important;
 }
 
 /* ---------- PROFILE AVATAR - MODO CLARO ---------- */
 body:not(.dark-mode) #profile_avatar{
   background: rgba(181,62,81,0.99) !important; /* rojo casi sólido */
-  border: 0.8px solid rgba(181,62,81,0.7) !important; /* borde semitransparente */
+  border: 1px solid rgba(181,62,81,0.7) !important; /* borde semitransparente */
   box-shadow: none !important; /* sin resplandor */
+}
+
+
+
+
+body:not(.dark-mode) div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta-entry{
+  background-color: rgba(181,62,81, 0.2) !important;
+  border: 1px solid rgba(181,62,81, 0.35) !important;
+  box-shadow: none !important;
 }
