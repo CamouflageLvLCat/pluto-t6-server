@@ -49,8 +49,12 @@ wine --version
 
 --------------------------------------------------------
 
+instalar el .NET SDK 8
 
+```c++
+sudo apt install -y dotnet-sdk-8.
 
+```
 
 eliminar todos los rastros de .NET Runtime 8 y ASP.NET Core Runtime 8 de tu sistema Ubuntu/Debian, incluyendo paquetes, configuraciones, caches y symlinks
 
