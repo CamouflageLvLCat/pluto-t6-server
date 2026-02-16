@@ -49,6 +49,53 @@ wine --version
 
 --------------------------------------------------------
 
+
+
+
+eliminar todos los rastros de .NET Runtime 8 y ASP.NET Core Runtime 8 de tu sistema Ubuntu/Debian, incluyendo paquetes, configuraciones, caches y symlinks
+
+```c++
+# 1. Desinstalar los paquetes y purgar configuraciones
+sudo apt remove --purge -y dotnet-runtime-8.0 aspnetcore-runtime-8.0 dotnet-sdk-8.0
+
+# 2. Limpiar dependencias huérfanas
+sudo apt autoremove -y
+
+# 3. Borrar caches de apt
+sudo apt clean
+
+# 4. Eliminar directorios comunes de .NET 8 (si existen)
+sudo rm -rf /usr/share/dotnet/dotnet-runtime-8.0
+sudo rm -rf /usr/share/dotnet/aspnetcore-runtime-8.0
+
+# 5. Eliminar symlinks globales si los hubiera
+sudo rm -f /usr/bin/dotnet
+```
+
+---------------------------------------------------------------
+
+eliminar todos los rastros de .NET Runtime 8 y ASP.NET Core Runtime 8 de tu sistema Ubuntu/Debian, incluyendo paquetes, configuraciones, caches y symlinks
+
+```c++
+# 1. Desinstalar los paquetes y purgar configuraciones
+sudo apt remove --purge -y dotnet-runtime-10.0 aspnetcore-runtime-10.0 dotnet-sdk-10.0
+
+# 2. Limpiar dependencias huérfanas
+sudo apt autoremove -y
+
+# 3. Borrar caches de apt
+sudo apt clean
+
+# 4. Eliminar directorios comunes de .NET 10 (si existen)
+sudo rm -rf /usr/share/dotnet/dotnet-runtime-10.0
+sudo rm -rf /usr/share/dotnet/aspnetcore-runtime-10.0
+
+# 5. Eliminar symlinks globales si los hubiera
+sudo rm -f /usr/bin/dotnet
+```
+
+
+
 amazon ubuntu-jammy-22.04:
 
 c7i-flex.large 2 cpu 4 GiB c3.large 2 cpu 3,75 GiB
