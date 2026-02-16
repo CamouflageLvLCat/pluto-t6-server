@@ -74,7 +74,7 @@ sudo rm -f /usr/bin/dotnet
 
 ---------------------------------------------------------------
 
-eliminar todos los rastros de .NET Runtime 8 y ASP.NET Core Runtime 8 de tu sistema Ubuntu/Debian, incluyendo paquetes, configuraciones, caches y symlinks
+eliminar todos los rastros de .NET Runtime 10 y ASP.NET Core Runtime 10 de tu sistema Ubuntu/Debian, incluyendo paquetes, configuraciones, caches y symlinks
 
 ```c++
 # 1. Desinstalar los paquetes y purgar configuraciones
