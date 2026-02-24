@@ -3,8 +3,24 @@
 
 
 
-.ml-15.mr-15 hr {
-    border: none;           /* quitar borde por defecto si quieres */
-    height: 2px;            /* grosor de la línea */
-    background-color: #191c20;  /* el color que quieras */
+/* Modo claro */
+body.light-mode .ml-15.mr-15 hr {
+    border: none !important;
+    border-top: 2px solid #FFFFFF !important; /* línea blanca */
+    height: 0 !important;
+    background: none !important;
 }
+
+/* Modo oscuro */
+body.dark-mode .ml-15.mr-15 hr {
+    border: none !important;
+    border-top: 2px solid #191c20 !important; /* línea fondo oscuro */
+    height: 0 !important;
+    background: none !important;
+}
+
+
+
+
+
+
