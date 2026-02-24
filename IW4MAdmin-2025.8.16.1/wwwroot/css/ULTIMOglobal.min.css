@@ -438,12 +438,25 @@ body.dark-mode nav.navbar{
    FIX GEOMETRÍA PERFECTA CARD IW4MADMIN
    ========================================= */
 
-/* 1️⃣ La card recorta TODO */
+/* =========================================
+   BORDE PERFECTO SIN USAR OVERFLOW HIDDEN
+   ========================================= */
+
 div.card.mt-20.mb-20.ml-0.mr-0.p-0{
-  overflow: visible !important;
+  position: relative !important;
+  overflow: visible !important;   /* ahora sí visible */
+  border: none !important;        /* quitamos el borde real */
   border-radius: 6px !important;
-  box-sizing: border-box !important;
-  padding: 0 !important;
+}
+
+/* Dibujamos el borde con pseudo-elemento */
+div.card.mt-20.mb-20.ml-0.mr-0.p-0::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgb(168, 44, 69);
+  border-radius: 6px;
+  pointer-events: none;
 }
 
 /* 2️⃣ Ningún hijo puede tener radio */
