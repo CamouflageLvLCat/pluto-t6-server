@@ -385,6 +385,7 @@ div.card.mt-20.mb-20.ml-0.mr-0.p-0 {
   overflow: visible !important;          /* CLAVE */
   border-radius: 5px 5px 0 0 !important; /* top-left, top-right, bottom-right, bottom-left */
   box-sizing: border-box !important;
+    box-shadow:none
 }
 
 /* El header del server NO debe tener radios */
@@ -411,15 +412,6 @@ div.card.mt-20.mb-20.ml-0.mr-0.p-0 > *{
 
 
 
-/* Efecto al pasar el mouse sobre la card del servidor */
-div.card.mt-20.mb-20.ml-0.mr-0.p-0 {
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* suaviza la animación */
-}
-
-div.card.mt-20.mb-20.ml-0.mr-0.p-0:hover {
-  transform: translateY(-4px); /* sube 4px */
-  box-shadow: 0 4px 10px rgba(168,44,69,0.3); /* sombra suave para efecto 3D */
-}
 
 
 
@@ -431,23 +423,6 @@ div.card.mt-20.mb-20.ml-0.mr-0.p-0:hover {
 
 
 
-
-
-
-
-/* DARK MODE */
-body.dark-mode div.card.mt-20.mb-20.ml-0.mr-0.p-0:hover {
-    transform: translateY(-2px);
-    border: 1px solid #ba4e64 !important; /* borde blanco */
-    box-shadow: none !important;          /* quitar resplandor */
-}
-
-/* LIGHT MODE */
-body:not(.dark-mode) div.card.mt-20.mb-20.ml-0.mr-0.p-0:hover {
-    transform: translateY(-2px);
-    border: 1px solid #992038 !important; /* borde blanco */
-    box-shadow: none !important;          /* quitar resplandor */
-}
 
 
 
