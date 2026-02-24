@@ -385,7 +385,6 @@ div.card.mt-20.mb-20.ml-0.mr-0.p-0 {
   overflow: visible !important;          /* CLAVE */
   border-radius: 5px 5px 0 0 !important; /* top-left, top-right, bottom-right, bottom-left */
   box-sizing: border-box !important;
-    box-shadow:none
 }
 
 /* El header del server NO debe tener radios */
@@ -403,10 +402,6 @@ div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-ligh
 div.card.mt-20.mb-20.ml-0.mr-0.p-0 > *{
   border-radius: 4px 4px 0 0 !important; /* top-left, top-right, bottom-right, bottom-left */
 }
-
-
-
-
 
 
 
