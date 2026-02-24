@@ -108,8 +108,9 @@ body.dark-mode .chartjs-size-monitor-shrink{
 body.light-mode,
 body:not(.dark-mode){
   background-color:#f4f6f9 !important;
-  color:var(--accent) !important;
+  color:#1a1a1a !important;   /* gris casi negro */
 }
+
 
 body.light-mode,
 body.light-mode .page-wrapper,
@@ -430,13 +431,16 @@ body.dark-mode nav.navbar{
 
 
 
+
+
+
 /* =========================================
    FIX GEOMETRÍA PERFECTA CARD IW4MADMIN
    ========================================= */
 
 /* 1️⃣ La card recorta TODO */
 div.card.mt-20.mb-20.ml-0.mr-0.p-0{
-  overflow: hidden !important;
+  overflow: visible !important;
   border-radius: 6px !important;
   box-sizing: border-box !important;
   padding: 0 !important;
@@ -468,7 +472,6 @@ div.card.mt-20.mb-20.ml-0.mr-0.p-0 > *:last-child{
 
 
 
-
 /* ============================
    RESTAURAR RADIO SOLO ARRIBA
    ============================ */
@@ -489,7 +492,6 @@ div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-ligh
   border-bottom-left-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
 }
-
 
 
 
