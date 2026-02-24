@@ -3,6 +3,349 @@
 
 
 
+
+
+
+/* =====================================================
+   IW4MADMIN — OPTIMIZED THEME (dark + light)
+   SIN BORDES DOBLES — BORDE UNICO 1px
+   ===================================================== */
+
+/* ---------- Variables ---------- */
+:root{
+  --bg-dark: #0F0F0F;
+  --text-dark: #c9ccd1;
+  --accent: #007fe3;
+  --accent-strong: rgb(168, 44, 69);
+  --accent-mid: rgb(168, 44, 69);
+  --accent-soft: rgb(168, 44, 69);
+  --white: #FFFFFF;
+}
+
+/* ---------- Base ---------- */
+html,body{margin:0;min-height:100%}
+
+/* ---------- DARK MODE ---------- */
+body.dark-mode,
+body:not(.light-mode){
+  background-color:var(--bg-dark) !important;
+  color:var(--text-dark) !important;
+}
+
+body.dark-mode,
+body.dark-mode .page-wrapper,
+body.dark-mode .wrapper,
+body.dark-mode .container-fluid,
+body.dark-mode .content-wrapper,
+body.dark-mode .content,
+body.dark-mode .row,
+body.dark-mode .row > div{
+  background-color:var(--bg-dark) !important;
+}
+
+/* cards */
+body.dark-mode .card{
+  background-color:var(--bg-dark) !important;
+  border:none !important;
+}
+
+body.dark-mode .card *:not([style*="flag"])
+:not([style*="flags"])
+:not([style*="country"])
+:not([id^="server_header_"])
+:not([data-toggle="tooltip"])
+:not([data-bs-toggle="tooltip"]) {
+  background-color: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+/* server blocks */
+body.dark-mode .server-card,
+body.dark-mode .server-activity,
+body.dark-mode .server-clientactivity,
+body.dark-mode .server-players,
+body.dark-mode .server-info,
+body.dark-mode .server-history,
+body.dark-mode .server-history-row,
+body.dark-mode [id^="server_clientactivity_"],
+body.dark-mode [id^="server_history_"]{
+  background-color:var(--bg-dark) !important;
+  border:none !important;
+  box-shadow:none !important;
+}
+
+/* internals */
+body.dark-mode .server-card *,
+body.dark-mode .server-activity *,
+body.dark-mode .server-clientactivity *,
+body.dark-mode .server-history *,
+body.dark-mode [id^="server_clientactivity_"] *,
+body.dark-mode [id^="server_history_"] *{
+  background-color:transparent !important;
+  background-image:none !important;
+  border:none !important;
+  box-shadow:none !important;
+}
+
+/* lists */
+body.dark-mode .list-group-item{
+  background-color:transparent !important;
+  color:var(--accent) !important;
+  border:none !important;
+}
+
+
+
+
+/* canvas */
+body.dark-mode canvas,
+body.dark-mode .chartjs-size-monitor,
+body.dark-mode .chartjs-size-monitor-expand,
+body.dark-mode .chartjs-size-monitor-shrink{
+  background-color:var(--bg-dark) !important;
+}
+
+/* ---------- LIGHT MODE ---------- */
+body.light-mode,
+body:not(.dark-mode){
+  background-color:#f4f6f9 !important;
+  color:#1a1a1a !important;   /* gris casi negro */
+}
+
+body.light-mode,
+body.light-mode .page-wrapper,
+body.light-mode .wrapper,
+body.light-mode .container-fluid,
+body.light-mode .content-wrapper,
+body.light-mode .content,
+body.light-mode .row,
+body.light-mode .row > div,
+body:not(.dark-mode),
+body:not(.dark-mode) .page-wrapper,
+body:not(.dark-mode) .wrapper,
+body:not(.dark-mode) .container-fluid,
+body:not(.dark-mode) .content-wrapper,
+body:not(.dark-mode) .content,
+body:not(.dark-mode) .row,
+body:not(.dark-mode) .row > div{
+  background-color:var(--white) !important;
+}
+
+/* cards light */
+body.light-mode .card,
+body:not(.dark-mode) .card{
+  background-color:var(--white) !important;
+  border:none !important;
+}
+
+/* ---------- SIDEBAR ---------- */
+body.dark-mode aside,
+body.dark-mode .main-sidebar,
+body.dark-mode .sidebar,
+body.dark-mode .nav-sidebar,
+body.dark-mode .d-none.d-lg-flex.col-3,
+body.dark-mode .on-this-page-nav{
+  background-color:var(--bg-dark) !important;
+}
+
+body.dark-mode nav.navbar input.form-control{
+  background: rgba(#0f0f0f) !important;
+  border:1px solid rgba(#0f0f0f) !important;
+  color:#fff !important;
+  box-shadow:none !important;
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   FIX SCROLLBAR (NO LO PISE TU CSS GLOBAL)
+   ========================= */
+
+body.dark-mode .sidebar,
+body.dark-mode .main-sidebar,
+body.dark-mode .on-this-page-nav {
+  scrollbar-width: thin !important;
+  scrollbar-color: #0F0F0F #0F0F0F !important;
+}
+
+body.dark-mode .sidebar::-webkit-scrollbar,
+body.dark-mode .main-sidebar::-webkit-scrollbar,
+body.dark-mode .on-this-page-nav::-webkit-scrollbar {
+  width: 10px !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/* FORZAR: quitar vidrio y poner color sólido #a82c45 en el bloque objetivo */
+body.dark-mode div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded,
+div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded {
+  background-image: none !important;
+  background: #a82c45 !important;
+  background-color: #a82c45 !important;
+  background-color: rgb(18, 18, 18) !important;
+
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+
+  box-shadow: none !important;
+  border: 1px solid rgb(168, 44, 69) !important; /* EDITADO */
+}
+
+
+
+
+
+
+
+div[id^="server_header_"].bg-primary {
+    border-bottom: 0.5px solid rgb(168, 44, 69) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* cards light */
+body.light-mode .card,
+body:not(.dark-mode) .card{
+  background-color:var(--white) !important;
+  border:none !important;
+}
+
+/* ---------- SIDEBAR ---------- */
+body.dark-mode aside,
+body.dark-mode .main-sidebar,
+body.dark-mode .sidebar,
+body.dark-mode .nav-sidebar,
+body.dark-mode .d-none.d-lg-flex.col-3,
+body.dark-mode .on-this-page-nav{
+  background-color:var(--bg-dark) !important;
+}
+
+body.dark-mode nav.navbar input.form-control{
+  background: rgba(#0f0f0f) !important;
+  border:1px solid rgba(#0f0f0f) !important;
+  color:#fff !important;
+  box-shadow:none !important;
+}
+
+/* ---------- SERVER HEADER (SIN BORDE) ---------- */
+DIV[id="server_header"][class="p-5 pl-10 pr-10 bg-primary rounded-top d-flex flex-column flex-lg-row flex-wrap justify-content-between text-light"],
+body.dark-mode [id^="server_header_"]{
+  background-color: rgb(168, 44, 69) !important;
+  color:#e6f2ff ;
+  border:none !important;
+  box-shadow:none !important;
+}
+
+body:not(.dark-mode) [id^="server_header_"]{
+  background-color: rgb(168, 44, 69) !important;
+  color:#1a1a1a !important;
+  border:none !important;
+  box-shadow:none !important;
+}
+
+
+
+body:not(.dark-mode) div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded{
+  background-color: rgb(235, 235, 235) !important;
+  color: #1a1a1a !important;
+  border: 1px solid rgb(168, 44, 69) !important; /* borde fino celeste */
+  box-shadow: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Modo claro */
 body.light-mode .ml-15.mr-15 hr {
     border: none !important;
@@ -14,10 +357,14 @@ body.light-mode .ml-15.mr-15 hr {
 /* Modo oscuro */
 body.dark-mode .ml-15.mr-15 hr {
     border: none !important;
-    border-top: 2px solid #191c20 !important; /* línea fondo oscuro */
+    border-top: 2px solid #0F0F0F !important; /* línea fondo oscuro */
     height: 0 !important;
     background: none !important;
 }
+
+
+
+
 
 
 
