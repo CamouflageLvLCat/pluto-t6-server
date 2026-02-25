@@ -16,10 +16,10 @@
 :root{
   --bg-dark: #0F0F0F;
   --text-dark: #c9ccd1;
-  --accent: #b53e51;
-  --accent-strong: rgba(168,44,69,0.55);
-  --accent-mid: rgba(168,44,69,0.45);
-  --accent-soft: rgba(168,44,69,0.22);
+  --accent: #117AC0;
+  --accent-strong: rgba(17,122,192,0.55);
+  --accent-mid: rgba(17,122,192,0.45);
+  --accent-soft: rgba(17,122,192,0.22);
   --white: #FFFFFF;
 }
 
@@ -157,14 +157,14 @@ body.dark-mode nav.navbar input.form-control{
 /* ---------- SERVER HEADER (SIN BORDE) ---------- */
 DIV[id="server_header"][class="p-5 pl-10 pr-10 bg-primary rounded-top d-flex flex-column flex-lg-row flex-wrap justify-content-between text-light"],
 body.dark-mode [id^="server_header_"]{
-  background-color: rgba(168,44,69) !important;
+  background-color: rgba(17,122,192) !important;
   color:#e6f2ff ;
   border:none !important;
   box-shadow:none !important;
 }
 
 body:not(.dark-mode) [id^="server_header_"]{
-  background-color: rgba(168,44,69) !important;
+  background-color: rgba(17,122,192) !important;
   color:#1a1a1a !important;
   border:none !important;
   box-shadow:none !important;
@@ -175,7 +175,7 @@ body:not(.dark-mode) [id^="server_header_"]{
 body:not(.dark-mode) div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded{
   background-color: rgba(255,255,255) !important;
   color: #1a1a1a !important;
-  border: 1px solid rgba(168,44,69, 0.55) !important; /* borde fino celeste */
+  border: 1px solid rgba(17,122,192, 0.55) !important; /* borde fino celeste */
   box-shadow: none !important;
 }
 
@@ -188,7 +188,7 @@ body:not(.dark-mode) div.d-flex.flex-column.flex-md-row.justify-content-md-betwe
 div.card.mt-20.mb-20.ml-0.mr-0.p-0{
   transition: transform 0.2s ease, box-shadow 0.2s ease; /* suaviza el movimiento y sombra */
   overflow:visible !important;
-  border: 1px solid rgba(168,44,69,0.7) !important;
+  border: 1px solid rgba(17,122,192,0.7) !important;
 }
 
 body.dark-mode div.card.mt-20.mb-20.ml-0.mr-0.p-0:hover,
@@ -199,7 +199,7 @@ body:not(.dark-mode) div.card.mt-20.mb-20.ml-0.mr-0.p-0:hover{
 
 /* ---------- BLOQUE SUPERIOR (SIN BORDE) ---------- */
 DIV[class="d-flex flex-column flex-md-row justify-content-md-between bg-dark-dm bg-light-lm p-10 mt-15 mb-15 rounded"]{
-  background-color: rgba(168,44,69,0.1) !important;
+  background-color: rgba(17,122,192,0.1) !important;
   border:none !important;
   box-shadow:none !important;
 }
@@ -208,8 +208,8 @@ DIV[class="d-flex flex-column flex-md-row justify-content-md-between bg-dark-dm 
 DIV[class="m-md-5 p-15 w-half rounded bg-very-dark-dm bg-light-ex-lm profile-meta-entry font-size-12  w-md-100 w-lg-150"],
 body.dark-mode div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta-entry,
 body:not(.dark-mode) div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta-entry{
-  background-color: rgba(99, 36, 46, 0.1) !important;
-  border: 0.5px solid rgba(168,44,69,0.7) !important;
+  background-color: rgba(17,122,192, 0.1) !important;
+  border: 0.5px solid rgba(17,122,192,0.7) !important;
   border-radius: 4px !important;        /* radio único */
   box-shadow:none !important;
 }
@@ -217,13 +217,13 @@ body:not(.dark-mode) div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta
 /* ---------- LISTAS ---------- */
 body.dark-mode .list-group-item,
 body:not(.dark-mode) .list-group-item{
-  border: 1px solid rgba(168,44,69,0.7) !important;
+  border: 1px solid rgba(17,122,192,0.7) !important;
 }
 
 /* ---------- HOVER ---------- */
 div.card.mt-20.mb-20.ml-0.mr-0.p-0:hover,
 div.card.mt-20.mb-20.ml-0.mr-0.p-0:focus-within {
-  border: 1px solid rgba(168,44,69,0.7) !important;
+  border: 1px solid rgba(17,122,192,0.7) !important;
 }
 
 
@@ -284,8 +284,8 @@ body:not(.dark-mode) .on-this-page-nav::-webkit-scrollbar-thumb {
 
 /* ---------- HEADER-LIKE BLOCK ---------- */
 DIV[class="d-flex flex-column flex-md-row justify-content-md-between bg-dark-dm bg-light-lm p-10 mt-15 mb-15 rounded"]{
-  background-color: rgba(168,44,69,0.7) !important;
-  border:1px solid rgba(168,44,69,0.7) !important; /* EDITADO */
+  background-color: rgba(17,122,192,0.7) !important;
+  border:1px solid rgba(17,122,192,0.7) !important; /* EDITADO */
   box-shadow:none !important;
 }
 
@@ -294,19 +294,19 @@ DIV[class="d-flex flex-column flex-md-row justify-content-md-between bg-dark-dm 
 
 
   
-/* FORZAR: quitar vidrio y poner color sólido #b53e51 en el bloque objetivo */
+/* FORZAR: quitar vidrio y poner color sólido #117AC0 en el bloque objetivo */
 body.dark-mode div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded,
 div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded {
   background-image: none !important;
-  background: #b53e51 !important;
-  background-color: #b53e51 !important;
+  background: #117AC0 !important;
+  background-color: #117AC0 !important;
   background-color: rgba(15,15,15) !important;
 
   -webkit-backdrop-filter: none !important;
   backdrop-filter: none !important;
 
   box-shadow: none !important;
-  border: 1px solid rgba(168,44,69,0.7) !important; /* EDITADO */
+  border: 1px solid rgba(17,122,192,0.7) !important; /* EDITADO */
 }
 
 
@@ -316,7 +316,7 @@ div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-ligh
 
 
 div[id^="server_header_"].bg-primary {
-    border-bottom: 0.5px solid rgba(168,44,69,0.5) !important;
+    border-bottom: 0.5px solid rgba(17,122,192,0.5) !important;
 }
 
 
@@ -330,16 +330,16 @@ div[id^="server_header_"].bg-primary {
 
 /* ---------- PROFILE AVATAR ---------- */
 body.dark-mode #profile_avatar{
-  background: rgba(168,44,69,0.99) !important;
-  border:1px solid rgba(168,44,69,0.7) !important;
+  background: rgba(17,122,192,0.99) !important;
+  border:1px solid rgba(17,122,192,0.7) !important;
   border-radius: 4px !important;        /* radio único */
   box-shadow:none !important;
 }
 
 /* ---------- PROFILE AVATAR - MODO CLARO ---------- */
 body:not(.dark-mode) #profile_avatar{
-  background: rgba(168,44,69,0.99) !important; /* rojo casi sólido */
-  border: 1px solid rgba(168,44,69,0.7) !important; /* borde semitransparente */
+  background: rgba(17,122,192,0.99) !important; /* rojo casi sólido */
+  border: 1px solid rgba(17,122,192,0.7) !important; /* borde semitransparente */
   border-radius: 4px !important;        /* radio único */
   box-shadow: none !important; /* sin resplandor */
 }
@@ -348,8 +348,8 @@ body:not(.dark-mode) #profile_avatar{
 
 
 body:not(.dark-mode) div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta-entry{
-  background-color: rgba(168,44,69, 0.2) !important;
-  border: 1px solid rgba(168,44,69, 0.35) !important;
+  background-color: rgba(17,122,192, 0.2) !important;
+  border: 1px solid rgba(17,122,192, 0.35) !important;
   border-radius: 4px !important;        /* radio único */
   box-shadow: none !important;
 }
@@ -359,8 +359,8 @@ body:not(.dark-mode) div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta
 
 
 body:not(.dark-mode) div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta-entry{
-  background-color: rgba(168,44,69, 0.2) !important;
-  border: 1px solid rgba(168,44,69, 0.35) !important;
+  background-color: rgba(17,122,192, 0.2) !important;
+  border: 1px solid rgba(17,122,192, 0.35) !important;
   border-radius: 4px !important;        /* radio único */
   box-shadow: none !important;
 }
@@ -385,6 +385,7 @@ div.card.mt-20.mb-20.ml-0.mr-0.p-0 {
   overflow: visible !important;          /* CLAVE */
   border-radius: 5px 5px 0 0 !important; /* top-left, top-right, bottom-right, bottom-left */
   box-sizing: border-box !important;
+    box-shadow:none
 }
 
 /* El header del server NO debe tener radios */
@@ -402,6 +403,10 @@ div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-ligh
 div.card.mt-20.mb-20.ml-0.mr-0.p-0 > *{
   border-radius: 4px 4px 0 0 !important; /* top-left, top-right, bottom-right, bottom-left */
 }
+
+
+
+
 
 
 
