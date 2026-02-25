@@ -15,7 +15,7 @@
   },
   "EnableWebFront": true,
   "WebfrontBindUrl": "http://0.0.0.0:1624",
-  "ManualWebfrontUrl": "http://iw4madmin-ar.ddns.net",
+  "ManualWebfrontUrl": "http://iw4madmin-br.ddns.net",
   "WebfrontPrimaryColor": "#117ac0",
   "WebfrontSecondaryColor": null,
   "WebfrontCustomBranding": null,
