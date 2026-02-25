@@ -20,7 +20,7 @@
   "WebfrontSecondaryColor": null,
   "WebfrontCustomBranding": null,
   "Webfront": {
-    "ScriptInjection": "<link rel=\"canonical\" href=\"http://iw4madmin-ar.ddns.net/\" /><script async src=\"https://www.googletagmanager.com/gtag/js?id=G-WMG705MJMD\"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-WMG705MJMD');</script><script>$(document).off('click','a,span');$(document).on('click','a,span',function(e){const text=$(this).text().trim();if(!/^(\\d{1,3}\\.){3}\\d{1,3}$/.test(text))return;e.preventDefault();fetch('https://ipinfo.io/'+text+'/json').then(r=>r.json()).then(data=>{if($('#ipModalCustom').length)$('#ipModalCustom').remove();const org=(data.org||'').toLowerCase();const asn=(data.org||'');const datacenterProviders=['digitalocean','ovh','hetzner','amazon','aws','google','microsoft','azure','vultr','choopa','m247','linode','oracle','contabo','scaleway'];let badge='';if(org.includes('cloudflare')||asn.includes('AS13335')){badge='<div style=\"margin-top:10px;padding:6px 10px;background:#f39c12;color:#fff;border-radius:4px;font-size:13px;display:inline-block\">Cloudflare Proxy</div>';}else if(datacenterProviders.some(p=>org.includes(p))){badge='<div style=\"margin-top:10px;padding:6px 10px;background:#c0392b;color:#fff;border-radius:4px;font-size:13px;display:inline-block\">Possible VPN / Datacenter</div>';}$('body').append('<div id=\"ipModalCustom\" style=\"position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:99999;display:flex;align-items:center;justify-content:center\"><div style=\"background:#0f0f0f;color:#c9ccd1;width:600px;max-width:90%;border-radius:8px;padding:20px;font-family:Consolas,monospace;box-shadow:0 0 20px rgba(0,0,0,0.5)\"><div style=\"display:flex;justify-content:space-between;align-items:center;margin-bottom:15px\"><strong>IP Information</strong><button id=\"closeIpModal\" style=\"background:#117ac0;border:none;color:#fff;padding:5px 10px;border-radius:4px;cursor:pointer\">Close</button></div><div style=\"line-height:1.8\"><div><strong>IP:</strong> '+(data.ip||text)+'</div><div><strong>City:</strong> '+(data.city||'N/A')+'</div><div><strong>Region:</strong> '+(data.region||'N/A')+'</div><div><strong>Country:</strong> '+(data.country||'N/A')+'</div><div><strong>Org:</strong> '+(data.org||'N/A')+'</div><div><strong>Location:</strong> '+(data.loc||'N/A')+'</div><div><strong>Postal:</strong> '+(data.postal||'N/A')+'</div><div><strong>Timezone:</strong> '+(data.timezone||'N/A')+'</div>'+badge+'<div style=\"margin-top:15px;font-size:13px;\"><a href=\"https://ipinfo.io/'+text+'\" target=\"_blank\" style=\"color:#4da3ff;text-decoration:none;\">More info ↗</a></div></div></div></div>');$('#closeIpModal').on('click',function(){$('#ipModalCustom').remove();});}).catch(err=>{console.error('IPinfo error:',err);alert('IP lookup temporarily unavailable');});});(function(){const applyCharts=()=>{if(!window.Chart||!Chart.instances)return;for(const k in Chart.instances){const c=Chart.instances[k];if(!c||!c.data||c._iw4mStyled)return;c._iw4mStyled=true;c.data.datasets.forEach(d=>{d.borderColor='#117ac0';d.backgroundColor='rgba(17,122,192,0.1)';d.borderWidth=1;d.pointRadius=0;d.tension=0.3;});c.options.maintainAspectRatio=false;c.options.animation=false;if(c.canvas){c.canvas.style.height='100px';c.canvas.style.maxHeight='100px';const p=c.canvas.parentElement;if(p){p.style.height='100px';p.style.maxHeight='100px';p.style.minHeight='100px';p.style.overflow='visible';}}c.update();}};const KEY='iw4m_selected_server';const applyServers=()=>{const links=document.querySelectorAll('a[href*=\\\"/Server/Scoreboard\\\"]');const saved=localStorage.getItem(KEY);links.forEach(a=>{const href=a.getAttribute('href');if(saved&&href===saved)a.classList.add('iw4m-server-selected');if(a.dataset.sel)return;a.dataset.sel=1;a.addEventListener('click',()=>{localStorage.setItem(KEY,href);links.forEach(x=>x.classList.remove('iw4m-server-selected'));a.classList.add('iw4m-server-selected');});});};const run=()=>{applyCharts();applyServers();};new MutationObserver(run).observe(document.body,{childList:true,subtree:true});window.addEventListener('DOMContentLoaded',run);})();</script>"
+    "ScriptInjection": "<link rel=\"canonical\" href=\"http://iw4madmin-ar.ddns.net/\" /><script async src=\"https://www.googletagmanager.com/gtag/js?id=G-WMG705MJMD\"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-WMG705MJMD');$(document).off('click','a,span');$(document).on('click','a,span',function(e){const text=$(this).text().trim();if(!/^(\\d{1,3}\\.){3}\\d{1,3}$/.test(text))return;e.preventDefault();fetch('https://ipinfo.io/'+text+'/json').then(r=>r.json()).then(data=>{if($('#ipModalCustom').length)$('#ipModalCustom').remove();function highlight(value){return value==='Yes'?'<span style=\"color:#e74c3c;font-weight:bold\">Yes</span>':'No';} $('body').append('<div id=\"ipModalCustom\" style=\"position:fixed;inset:0;background:rgba(0,0,0,0.75);z-index:99999;display:flex;align-items:center;justify-content:center\"><div style=\"background:#0f0f0f;color:#c9ccd1;width:520px;max-width:95%;border-radius:8px;padding:20px;font-family:inherit;box-shadow:0 0 20px rgba(0,0,0,0.5)\"><div style=\"display:flex;justify-content:space-between;align-items:center;margin-bottom:15px\"><strong>IP Information</strong><div><a href=\"https://ipinfo.io/'+text+'\" target=\"_blank\" style=\"margin-right:10px;color:#4aa3ff;text-decoration:none\">More info</a><button id=\"closeIpModal\" style=\"background:#117ac0;border:none;color:#fff;padding:5px 10px;border-radius:4px;cursor:pointer\">Close</button></div></div><div style=\"line-height:1.8\"><div><strong>IP:</strong> '+(data.ip||text)+'</div><div><strong>Hostname:</strong> '+(data.hostname||'N/A')+'</div><div><strong>City:</strong> '+(data.city||'N/A')+'</div><div><strong>Region:</strong> '+(data.region||'N/A')+'</div><div><strong>Country:</strong> '+(data.country||'N/A')+'</div><div><strong>Org:</strong> '+(data.org||'N/A')+'</div><div><strong>VPN:</strong> '+highlight(data.privacy&&data.privacy.vpn?'Yes':'No')+'</div><div><strong>Proxy:</strong> '+highlight(data.privacy&&data.privacy.proxy?'Yes':'No')+'</div></div></div></div>');$('#closeIpModal').on('click',function(){$('#ipModalCustom').remove();});}).catch(err=>{console.error('IPinfo error:',err);alert('IP lookup temporarily unavailable');});});(function(){const applyCharts=()=>{if(!window.Chart||!Chart.instances)return;for(const k in Chart.instances){const c=Chart.instances[k];if(!c||!c.data||c._iw4mStyled)continue;c._iw4mStyled=true;c.data.datasets.forEach(d=>{d.borderColor='#117ac0';d.backgroundColor='rgba(17,122,192,0.1)';d.borderWidth=1;d.pointRadius=0;d.tension=0.3;});c.options.maintainAspectRatio=false;c.options.animation=false;c.update();}};const KEY='iw4m_selected_server';const applyServers=()=>{const links=document.querySelectorAll('a[href*=\"/Server/Scoreboard\"]');const saved=localStorage.getItem(KEY);links.forEach(a=>{const href=a.getAttribute('href');if(saved&&href===saved)a.classList.add('iw4m-server-selected');if(a.dataset.sel)return;a.dataset.sel=1;a.addEventListener('click',()=>{localStorage.setItem(KEY,href);links.forEach(x=>x.classList.remove('iw4m-server-selected'));a.classList.add('iw4m-server-selected');});});};const run=()=>{applyCharts();applyServers();};new MutationObserver(run).observe(document.body,{childList:true,subtree:true});window.addEventListener('DOMContentLoaded',run);})();</script>"
   },
   "EnableMultipleOwners": false,
   "EnableSteppedHierarchy": false,
@@ -127,6 +127,19 @@
   "Servers": [
     {
       "IPAddress": "127.0.0.1",
+      "Port": 4979,
+      "Password": "tytyty",
+      "Rules": [],
+      "AutoMessages": [],
+      "ManualLogPath": "C:/Users/xty64/AppData/Local/Plutonium/storage/t6/main/logs/games3_mp.log",
+      "RConParserVersion": "Plutonium T6 Parser (2024)",
+      "EventParserVersion": "Plutonium T6 Parser (2024)",
+      "ReservedSlotNumber": 0,
+      "GameLogServerUrl": null,
+      "CustomHostname": null
+    },
+    {
+      "IPAddress": "127.0.0.1",
       "Port": 4981,
       "Password": "tytyty",
       "Rules": [],
@@ -137,23 +150,10 @@
       "ReservedSlotNumber": 0,
       "GameLogServerUrl": null,
       "CustomHostname": null
-    },
-    {
-      "IPAddress": "127.0.0.1",
-      "Port": 4979,
-      "Password": "tytyty",
-      "Rules": [],
-      "AutoMessages": [],
-      "ManualLogPath": "/home/ubuntu/pluto-t6-server/Plutonium/storage/t6/main/logs/games3_mp.log",
-      "RConParserVersion": "Plutonium T6 Parser (2024)",
-      "EventParserVersion": "Plutonium T6 Parser (2024)",
-      "ReservedSlotNumber": 0,
-      "GameLogServerUrl": null,
-      "CustomHostname": null
     }
   ],
   "MinimumNameLength": 3,
-  "Id": "12c66057-acfb-4878-bd33-d7df54471018",
+  "Id": "7fa18ad9-e8ed-4ab6-94d2-beec7fbfccc9",
   "SubscriptionId": null,
   "Maps": null,
   "QuickMessages": null,
