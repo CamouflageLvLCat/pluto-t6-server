@@ -366,9 +366,6 @@ body:not(.dark-mode) div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta
 }
 
 
-body.dark-mode .ml-15.mr-15 > hr {
-  display: none;
-}
 
 
 
