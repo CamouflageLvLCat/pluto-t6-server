@@ -76,16 +76,17 @@ body.dark-mode [id^="server_history_"]{
   box-shadow:none !important;
 }
 
-/* internals */
-body.dark-mode .server-card *,
-body.dark-mode .server-activity *,
-body.dark-mode .server-clientactivity *,
-body.dark-mode .server-history *,
-body.dark-mode [id^="server_clientactivity_"] *,
-body.dark-mode [id^="server_history_"] *{
-  background-color:transparent !important;
-  background-image:none !important;
-  border:none !important;
+
+
+body.dark-mode .server-card,
+body.dark-mode .server-activity,
+body.dark-mode .server-clientactivity,
+body.dark-mode .server-players,
+body.dark-mode .server-info,
+body.dark-mode .server-history,
+body.dark-mode [id^="server_clientactivity_"],
+body.dark-mode [id^="server_history_"]{
+  background-color:var(--bg-dark) !important;
   box-shadow:none !important;
 }
 
@@ -400,8 +401,6 @@ div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-ligh
 div.card.mt-20.mb-20.ml-0.mr-0.p-0 > *{
   border-radius: 4px 4px 0 0 !important; /* top-left, top-right, bottom-right, bottom-left */
 }
-
-
 
 
 
