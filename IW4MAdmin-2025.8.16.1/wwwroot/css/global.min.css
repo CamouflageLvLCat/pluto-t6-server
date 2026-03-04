@@ -205,27 +205,6 @@ DIV[class="d-flex flex-column flex-md-row justify-content-md-between bg-dark-dm 
   box-shadow:none !important;
 }
 
-/* ---------- PROFILE META ENTRY ---------- */
-DIV[class="m-md-5 p-15 w-half rounded bg-very-dark-dm bg-light-ex-lm profile-meta-entry font-size-12  w-md-100 w-lg-150"],
-body.dark-mode div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta-entry,
-body:not(.dark-mode) div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta-entry{
-  background-color: rgba(174,52,56, 0.1) !important;
-  border: 0.5px solid rgba(174,52,56,0.7) !important;
-  border-radius: 4px !important;        /* radio único */
-  box-shadow:none !important;
-}
-
-/* ---------- LISTAS ---------- */
-body.dark-mode .list-group-item,
-body:not(.dark-mode) .list-group-item{
-  border: 1px solid rgba(174,52,56,0.7) !important;
-}
-
-/* ---------- HOVER ---------- */
-div.card.mt-20.mb-20.ml-0.mr-0.p-0:hover,
-div.card.mt-20.mb-20.ml-0.mr-0.p-0:focus-within {
-  border: 1px solid rgba(174,52,56,0.7) !important;
-}
 
 
 
@@ -348,23 +327,6 @@ body:not(.dark-mode) #profile_avatar{
 
 
 
-body:not(.dark-mode) div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta-entry{
-  background-color: rgba(174,52,56, 0.2) !important;
-  border: 1px solid rgba(174,52,56, 0.35) !important;
-  border-radius: 4px !important;        /* radio único */
-  box-shadow: none !important;
-}
-
-
-
-
-
-body:not(.dark-mode) div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta-entry{
-  background-color: rgba(174,52,56, 0.2) !important;
-  border: 1px solid rgba(174,52,56, 0.35) !important;
-  border-radius: 4px !important;        /* radio único */
-  box-shadow: none !important;
-}
 
 
 
