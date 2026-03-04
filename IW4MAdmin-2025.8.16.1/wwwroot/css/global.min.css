@@ -173,13 +173,6 @@ body:not(.dark-mode) [id^="server_header_"]{
 
 
 
-body:not(.dark-mode) div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded{
-  background-color: rgba(255,255,255) !important;
-  color: #1a1a1a !important;
-  border: 1px solid rgba(174,52,56, 0.55) !important; /* borde fino celeste */
-  box-shadow: none !important;
-}
-
 
 
 
@@ -472,12 +465,9 @@ div.stat-card.bg-light-ex-lm:focus-within{
 
 
 
-
-
-
-
-
-
+div[id^="server_header_"].bg-primary {
+    border-bottom: 0.5px solid rgba(174,52,56,0.5) !important;
+}
 
 
 
@@ -512,8 +502,8 @@ body.dark-mode div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-
 div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded {
 
   background-image: none !important;
-  background: #121821 !important;
-  background-color: #121821 !important;
+  background: rgba(174,52,56,0.1) !important;
+  background-color: rgba(174,52,56,0.1) !important;
 
   -webkit-backdrop-filter: none !important;
   backdrop-filter: none !important;
@@ -530,9 +520,15 @@ div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-ligh
 
 
 
+body:not(.dark-mode) div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded{
 
-div[id^="server_header_"].bg-primary {
-    border-bottom: 0.5px solid rgba(174,52,56,0.5) !important;
+  background-image: none !important;
+  background: rgba(174,52,56,0.1) !important;
+  background-color: rgba(174,52,56,0.1) !important;
+
+  box-shadow: none !important;
+  border: 1px solid rgba(174,52,56,0.7) !important;
+
+  border-radius: 4px !important;
+  overflow: hidden !important;
 }
-
-
