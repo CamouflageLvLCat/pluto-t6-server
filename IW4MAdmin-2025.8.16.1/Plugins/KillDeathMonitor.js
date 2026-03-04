@@ -106,7 +106,7 @@ plugin = {
 
             // Armas especiales (opcional)
             var weaponMap = {
-                "satchel_charge": "C4"
+                "satchel_charge": "satchel_charge C4"
             };
             if (weapon && weaponMap[weapon]) weapon = weaponMap[weapon];
 
