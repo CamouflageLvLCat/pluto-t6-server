@@ -408,6 +408,60 @@ div.card.mt-20.mb-20.ml-0.mr-0.p-0 > *{
 
 
 
+/* ---------------------------------------- */
+/* IW4MAdmin Webfront - Quitar efectos visuales */
+/* ---------------------------------------- */
+
+/* Quitar transiciones y animaciones de todos los menús y ventanas */
+.menu, .window, .popup, .panel {
+    transition: none !important;
+    animation: none !important;
+}
+
+/* Forzar que se vea inmediatamente al abrir */
+.menu.open, .window.open, .popup.open, .panel.open {
+    transform: translateX(0) !important;
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+}
+
+/* Evitar que queden fuera de la pantalla */
+.menu, .window, .popup, .panel {
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+}
+
+/* Opcional: quitar cualquier sombra o efecto visual */
+.menu, .window, .popup, .panel {
+    box-shadow: none !important;
+    background: inherit !important;
+}
+
+/* Quitar cualquier fade-in/out */
+.menu, .window, .popup, .panel {
+    visibility: visible !important;
+}
+
+/* Para submenús o menús laterales */
+.submenu, .sidebar {
+    transition: none !important;
+    animation: none !important;
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+}
+
+/* Para modales */
+.modal {
+    transition: none !important;
+    animation: none !important;
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+}
+
+
+
 
 
 
