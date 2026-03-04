@@ -274,30 +274,7 @@ DIV[class="d-flex flex-column flex-md-row justify-content-md-between bg-dark-dm 
 
 
   
-/* FORZAR: quitar vidrio y poner color sólido #AE3438 en el bloque objetivo */
-body.dark-mode div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded,
-div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded {
-  background-image: none !important;
-  background: #AE3438 !important;
-  background-color: #AE3438 !important;
-  background-color: rgba(18,24,33) !important;
 
-  -webkit-backdrop-filter: none !important;
-  backdrop-filter: none !important;
-
-  box-shadow: none !important;
-  border: 1px solid rgba(174,52,56,0.7) !important; /* EDITADO */
-}
-
-
-
-
-
-
-
-div[id^="server_header_"].bg-primary {
-    border-bottom: 0.5px solid rgba(174,52,56,0.5) !important;
-}
 
 
 
@@ -430,6 +407,27 @@ div.card.mt-20.mb-20.ml-0.mr-0.p-0 > *{
 
 
 
+/* ---------- PROFILE META ENTRY ---------- */
+DIV[class="m-md-5 p-15 w-half rounded bg-very-dark-dm bg-light-ex-lm profile-meta-entry font-size-12  w-md-100 w-lg-150"],
+body.dark-mode div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta-entry,
+body:not(.dark-mode) div.m-md-5.p-15.w-half.rounded.bg-very-dark-dm.profile-meta-entry{
+
+  border: 0.5px solid rgba(174,52,56,0.7) !important;
+  border-radius: 4px !important;        /* radio único */
+  box-shadow:none !important;
+}
+
+/* ---------- LISTAS ---------- */
+body.dark-mode .list-group-item,
+body:not(.dark-mode) .list-group-item{
+  border: 1px solid rgba(174,52,56,0.7) !important;
+}
+
+/* ---------- HOVER ---------- */
+div.card.mt-20.mb-20.ml-0.mr-0.p-0:hover,
+div.card.mt-20.mb-20.ml-0.mr-0.p-0:focus-within {
+  border: 1px solid rgba(174,52,56,0.7) !important;
+}
 
 
 
@@ -440,5 +438,101 @@ div.card.mt-20.mb-20.ml-0.mr-0.p-0 > *{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- STAT CARD ---------- */
+DIV[class="stat-card bg-very-dark-dm bg-light-ex-lm p-15 m-md-5 w-half w-md-200 rounded flex-fill"],
+body.dark-mode div.stat-card.bg-very-dark-dm,
+body:not(.dark-mode) div.stat-card.bg-light-ex-lm{
+
+  border: 0.5px solid rgba(174,52,56,0.7) !important;
+  border-radius: 4px !important;   /* radio único */
+  box-shadow: none !important;
+}
+
+/* ---------- HOVER (STAT CARD) ---------- */
+div.stat-card.bg-very-dark-dm:hover,
+div.stat-card.bg-light-ex-lm:hover,
+div.stat-card.bg-very-dark-dm:focus-within,
+div.stat-card.bg-light-ex-lm:focus-within{
+  border: 1px solid rgba(174,52,56,0.7) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------- BLOQUE ROJO SOLIDO (4 ESQUINAS) ---------- */
+body.dark-mode div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded,
+div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded {
+
+  background-image: none !important;
+  background: #121821 !important;
+  background-color: #121821 !important;
+
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+
+  box-shadow: none !important;
+  border: 1px solid rgba(174,52,56,0.7) !important;
+
+  border-radius: 4px !important;
+  overflow: hidden !important;
+}
+
+
+
+
+
+
+
+div[id^="server_header_"].bg-primary {
+    border-bottom: 0.5px solid rgba(174,52,56,0.5) !important;
+}
 
 
