@@ -502,8 +502,8 @@ body.dark-mode div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-
 div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded {
 
   background-image: none !important;
-  background: rgba(174,52,56,0.1) !important;
-  background-color: rgba(174,52,56,0.1) !important;
+  background: rgba(18, 24, 33) !important;
+  background-color: rgba(18, 24, 33) !important;
 
   -webkit-backdrop-filter: none !important;
   backdrop-filter: none !important;
@@ -523,8 +523,8 @@ div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-ligh
 body:not(.dark-mode) div.d-flex.flex-column.flex-md-row.justify-content-md-between.bg-dark-dm.bg-light-lm.p-10.mt-15.mb-15.rounded{
 
   background-image: none !important;
-  background: rgba(174,52,56,0.1) !important;
-  background-color: rgba(174,52,56,0.1) !important;
+  background: rgba(255, 255, 255) !important;
+  background-color: rgba(255, 255, 255) !important;
 
   box-shadow: none !important;
   border: 1px solid rgba(174,52,56,0.7) !important;
