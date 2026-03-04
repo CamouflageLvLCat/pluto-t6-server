@@ -1,6 +1,6 @@
 plugin = {
     author: "LTDA-lab",
-    version: 2.4,
+    version: 2.5,
     name: "KillDeathMonitor",
 
     onEventAsync: function (gameEvent, server) {
@@ -11,8 +11,9 @@ plugin = {
             var target = gameEvent.Target;
             if (!origin || !target || !server.Clients.includes(origin) || !server.Clients.includes(target)) return;
 
-            // --- Extraer posible nombre de arma (varias rutas) ---
+            // --- Extraer posible nombre de arma ---
             var weapon = null;
+
             if (gameEvent.Data) {
                 if (typeof gameEvent.Data.Weapon === "string" && gameEvent.Data.Weapon.length) weapon = gameEvent.Data.Weapon;
                 else if (typeof gameEvent.Data.KillerWeapon === "string" && gameEvent.Data.KillerWeapon.length) weapon = gameEvent.Data.KillerWeapon;
@@ -48,65 +49,20 @@ plugin = {
                 }
             }
 
-            // --- Sanitizar mp_ / _mp de forma robusta ---
-            var originalWeapon = weapon ? String(weapon) : null;
+            // --- Limpiar mp_ / _mp ---
             if (weapon) {
-                var w = originalWeapon.trim().toLowerCase();
-
-                // Quitar patrones mp_ (en cualquier parte) y _mp (en cualquier parte),
-                // pero no tocar "mp" si es parte de algo como "mp5".
-                // Esto elimina solo las ocurrencias con guion/underscore alrededor.
-                w = w.replace(/mp[_-]+/gi, "");     // mp_  mp-  (inicio o medio)
-                w = w.replace(/[_-]+mp/gi, "");     // _mp  -mp  (final o medio)
-                // quitar underscores sobrantes al inicio/final
-                w = w.replace(/^_+|_+$/g, "");
-                if (w.length === 0) w = null;
-                weapon = w;
+                weapon = String(weapon).trim().toLowerCase();
+                weapon = weapon.replace(/^(?:mp[_-]*)+/i, ""); // mp_ al inicio
+                weapon = weapon.replace(/(?:[_-]*mp)+$/i, ""); // _mp al final
+                weapon = weapon.replace(/^_+|_+$/g, "");        // guiones sobrantes al inicio/final
+                // --- Tomar solo la primera parte (arma base) ---
+                weapon = weapon.split(/[_-]/)[0];               // elimina accesorios
             }
 
-            // --- Si detectamos que había mp en el original y la limpieza no lo quitó,
-            //     registrar un log de depuración con un extracto del evento ---
-            try {
-                var needDebug = false;
-                if (originalWeapon && /(^|_|-|\b)mp[_-]?|[_-]?mp($|_|-|\b)/i.test(originalWeapon)) {
-                    // si el original contenía mp_/_mp pero el resultado aún contiene "mp_" o "_mp" o está igual,
-                    if (!weapon || /mp[_-]|[_-]mp/i.test(originalWeapon) && (originalWeapon.toLowerCase().indexOf(String(weapon || "")) === -1 || /mp[_-]|[_-]mp/i.test(String(weapon || "")))) {
-                        needDebug = true;
-                    }
-                }
-                if (needDebug && server.Logger && typeof server.Logger.WriteWarning === "function") {
-                    // construir un resumen seguro del evento para log (no volcar TODO si es muy grande)
-                    var snippet = {};
-                    try {
-                        snippet.type = gameEvent.Type;
-                        snippet.WeaponName = gameEvent.WeaponName || null;
-                        snippet.DataKeys = gameEvent.Data ? Object.keys(gameEvent.Data).slice(0,10) : null;
-                        snippet.DataSample = {};
-                        if (gameEvent.Data) {
-                            var count = 0;
-                            for (var k in gameEvent.Data) {
-                                if (!gameEvent.Data.hasOwnProperty(k)) continue;
-                                // solo añadir campos que parezcan relacionados con arma o control (limitado)
-                                if (/weapon|mp|name/i.test(k) && count < 6) {
-                                    try { snippet.DataSample[k] = gameEvent.Data[k]; } catch(e){ snippet.DataSample[k] = "[no-read]"; }
-                                    count++;
-                                }
-                            }
-                        }
-                    } catch(e) { snippet = {err: "error building snippet"}; }
-
-                    var out = "KDMonitor DEBUG: originalWeapon=" + originalWeapon + " | sanitized=" + String(weapon) + " | snippet=" + JSON.stringify(snippet);
-                    // limitar largo del log
-                    if (out.length > 2000) out = out.slice(0,2000) + "...(truncated)";
-                    server.Logger.WriteWarning(out);
-                }
-            } catch (e) {
-                // no hacemos nada crítico si el log falla
-            }
-
-            // Armas especiales (opcional)
+            // Armas especiales
             var weaponMap = {
-                "satchel_charge": "satchel_charge C4"
+                "satchel_charge": "satchel_charge c4"
+				"7": "mp7"
             };
             if (weapon && weaponMap[weapon]) weapon = weaponMap[weapon];
 
