@@ -291,9 +291,89 @@ chmod +x StartIW4MAdmin.sh
 
 
 
+bloquear cluudflare en linux ubuntu:
+
+```c++
+sudo iptables -I INPUT -p udp --dport 4979 -s 173.245.48.0/20 -j DROP
+sudo iptables -I INPUT -p udp --dport 4979 -s 103.21.244.0/22 -j DROP
+sudo iptables -I INPUT -p udp --dport 4979 -s 103.22.200.0/22 -j DROP
+sudo iptables -I INPUT -p udp --dport 4979 -s 103.31.4.0/22 -j DROP
+sudo iptables -I INPUT -p udp --dport 4979 -s 141.101.64.0/18 -j DROP
+sudo iptables -I INPUT -p udp --dport 4979 -s 108.162.192.0/18 -j DROP
+sudo iptables -I INPUT -p udp --dport 4979 -s 190.93.240.0/20 -j DROP
+sudo iptables -I INPUT -p udp --dport 4979 -s 188.114.96.0/20 -j DROP
+sudo iptables -I INPUT -p udp --dport 4979 -s 197.234.240.0/22 -j DROP
+sudo iptables -I INPUT -p udp --dport 4979 -s 198.41.128.0/17 -j DROP
+sudo iptables -I INPUT -p udp --dport 4979 -s 162.158.0.0/15 -j DROP
+sudo iptables -I INPUT -p udp --dport 4979 -s 104.16.0.0/13 -j DROP
+sudo iptables -I INPUT -p udp --dport 4979 -s 104.24.0.0/14 -j DROP
+sudo iptables -I INPUT -p udp --dport 4979 -s 104.28.0.0/16 -j DROP
+sudo iptables -I INPUT -p udp --dport 4979 -s 172.64.0.0/13 -j DROP
+sudo iptables -I INPUT -p udp --dport 4979 -s 131.0.72.0/22 -j DROP
+
+# Ahora para los puertos 4980 y 4981
+sudo iptables -I INPUT -p udp --dport 4980 -s 173.245.48.0/20 -j DROP
+sudo iptables -I INPUT -p udp --dport 4980 -s 103.21.244.0/22 -j DROP
+sudo iptables -I INPUT -p udp --dport 4980 -s 103.22.200.0/22 -j DROP
+sudo iptables -I INPUT -p udp --dport 4980 -s 103.31.4.0/22 -j DROP
+sudo iptables -I INPUT -p udp --dport 4980 -s 141.101.64.0/18 -j DROP
+sudo iptables -I INPUT -p udp --dport 4980 -s 108.162.192.0/18 -j DROP
+sudo iptables -I INPUT -p udp --dport 4980 -s 190.93.240.0/20 -j DROP
+sudo iptables -I INPUT -p udp --dport 4980 -s 188.114.96.0/20 -j DROP
+sudo iptables -I INPUT -p udp --dport 4980 -s 197.234.240.0/22 -j DROP
+sudo iptables -I INPUT -p udp --dport 4980 -s 198.41.128.0/17 -j DROP
+sudo iptables -I INPUT -p udp --dport 4980 -s 162.158.0.0/15 -j DROP
+sudo iptables -I INPUT -p udp --dport 4980 -s 104.16.0.0/13 -j DROP
+sudo iptables -I INPUT -p udp --dport 4980 -s 104.24.0.0/14 -j DROP
+sudo iptables -I INPUT -p udp --dport 4980 -s 104.28.0.0/16 -j DROP
+sudo iptables -I INPUT -p udp --dport 4980 -s 172.64.0.0/13 -j DROP
+sudo iptables -I INPUT -p udp --dport 4980 -s 131.0.72.0/22 -j DROP
+
+# Y ahora para el puerto 4981
+sudo iptables -I INPUT -p udp --dport 4981 -s 173.245.48.0/20 -j DROP
+sudo iptables -I INPUT -p udp --dport 4981 -s 103.21.244.0/22 -j DROP
+sudo iptables -I INPUT -p udp --dport 4981 -s 103.22.200.0/22 -j DROP
+sudo iptables -I INPUT -p udp --dport 4981 -s 103.31.4.0/22 -j DROP
+sudo iptables -I INPUT -p udp --dport 4981 -s 141.101.64.0/18 -j DROP
+sudo iptables -I INPUT -p udp --dport 4981 -s 108.162.192.0/18 -j DROP
+sudo iptables -I INPUT -p udp --dport 4981 -s 190.93.240.0/20 -j DROP
+sudo iptables -I INPUT -p udp --dport 4981 -s 188.114.96.0/20 -j DROP
+sudo iptables -I INPUT -p udp --dport 4981 -s 197.234.240.0/22 -j DROP
+sudo iptables -I INPUT -p udp --dport 4981 -s 198.41.128.0/17 -j DROP
+sudo iptables -I INPUT -p udp --dport 4981 -s 162.158.0.0/15 -j DROP
+sudo iptables -I INPUT -p udp --dport 4981 -s 104.16.0.0/13 -j DROP
+sudo iptables -I INPUT -p udp --dport 4981 -s 104.24.0.0/14 -j DROP
+sudo iptables -I INPUT -p udp --dport 4981 -s 104.28.0.0/16 -j DROP
+sudo iptables -I INPUT -p udp --dport 4981 -s 172.64.0.0/13 -j DROP
+sudo iptables -I INPUT -p udp --dport 4981 -s 131.0.72.0/22 -j DROP
+
+```
 
 
 
+```c++
+sudo iptables -A INPUT -s 128.201.210.0/23 -j DROP 
+sudo iptables -A OUTPUT -d 128.201.210.0/23 -j DROP 
+sudo iptables -A INPUT -s 186.189.85.0/24 -j DROP 
+sudo iptables -A OUTPUT -d 186.189.85.0/24 -j DROP
+```
+
+
+
+
+
+Verificar:
+
+```c++
+sudo iptables -L -n
+```
+
+Guardar reglas (Ubuntu clásico):
+
+```c++
+sudo apt install iptables-persistent 
+sudo netfilter-persistent save 
+```
 
 
 
